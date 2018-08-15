@@ -37,7 +37,7 @@ class DbManager:
         if db_path:
             self.db_path = db_path
         else:
-            self.db_path = 'sqlite:///messages.db'
+            self.db_path = 'sqlite:///pin_out.db'
 
     def _get_handles(self):
         """Connect to the database"""
