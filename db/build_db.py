@@ -7,10 +7,19 @@ import toml
 from tqdm import tqdm
 
 from db import database
+from db import pin
 from parsers.parse_table import PARSE_TABLE
 
 
-def file_to_pins(filepath: str):
+def file_to_pins(filepath: Path) -> List[pin.Pin]:
+    """Parses a single file to a list of Pin types.
+
+    Args:
+        filepath: Path with relative path to current file
+
+    Returns:
+        List of Pins from parsed file
+    """
     config_file = Path(filepath).parent / 'overview.toml'
 
     if not config_file.is_file():
