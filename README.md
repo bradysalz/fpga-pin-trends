@@ -6,7 +6,7 @@ This repo is probably going to be 90% code dedicated to data cleanup, and 10% ~~
 
 ## Getting Started
 
-## Data Overview
+## Data
 
 This entire repo revolves around pin-outs of a huge number of components, none of which were designed by me. I've included this data in the repo under `data/` in order to make everything simpler. It's organized as:
 ```
@@ -24,11 +24,15 @@ data
 └───manufacturer_X
 ```
 
-The `overview.toml` file contains the generational parameters of the product family. For now, it's only a few items:
+### Data Overview
+
+The `overview.toml` file contains the generational parameters of the product family. The base set of information is:
 
 1. `node`: the CMOS process node the family was fabricated on [assumes nanometer CMOS]
 2. `year`: the year the device family came out
-3. `parser`: which parser to use for this product family
+3. `parser`: the parser function to use for this product family
+4. `manufacturer`: the OEM who made this component
+5. `family`: the OEM's designated product family (if applicable)
 
 All of the pin out data comes from downloading (a huge number) of files from these two sites:
 

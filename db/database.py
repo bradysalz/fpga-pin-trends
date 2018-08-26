@@ -42,7 +42,7 @@ class DbManager:
     def _get_handles(self):
         """Connect to the database"""
         if not self.db_path:
-            raise ValueError("Require a DB path!")
+            raise ValueError("Require a DB path in order to connect!")
 
         self._engine = create_engine(
             self.db_path, convert_unicode=True, echo=self.debug)
@@ -53,7 +53,7 @@ class DbManager:
         self._get_handles()
         return self._session()
 
-    def create_db(self, db_path: Optional[str] = None):
+    def _create_db(self, db_path: Optional[str] = None):
         """Create the database and holds handles to it
 
         Args:
@@ -66,8 +66,10 @@ class DbManager:
 
 
 if __name__ == "__main__":
+    print("Creating database...")
     if os.path.exists('pin_out.db'):
         raise FileExistsError(
             "'pin_out.db' already exists, please delete and retry")
     manager = DbManager(debug=True)
-    manager.create_db()
+    manager._create_db()
+    print("Database created")

@@ -1,62 +1,65 @@
+#!/usr/bin/env python3
+import csv
+from pathlib import Path
 from typing import Dict, List
 
-import pandas as pd
 import toml
 
 from db.pin import Pin
 
 
-def parse_xilinx_ultrascale(fname: str, config: Dict) -> List[Pin]:
-    """Parse a Xilinx Ultrascale pinout to a Pin list.
+def _pin_type_cleanup(ptype: str) -> str:
+    if 'VCC' in ptype:
+        return 'VCC'
+    if 'GND' in ptype:
+        return 'GND'
+    return ptype
+
+
+def parse_kintex_ultrascale(filepath: Path, config: Dict) -> List[Pin]:
+    """Parse a Xilinx Kintex Ultrascale pinout to a Pin list.
 
     Args:
         fname: filename as a string
+        config: dictionary from loaded configuration TOML file
 
     Returns:
         Pin list of parsed data
     """
-    with open(fname, 'r') as f:
-        df = pd.read_csv(
-            f,
-            warn_bad_lines=True,
-            error_bad_lines=True,
-            header=2,
-            skipfooter=2,
-            engine='python',
-            verbose=True)
 
-    df.loc[df['Pin Name'].str.contains('VCC'), 'I/O Type'] = 'PWR'
-    df.loc[df['Pin Name'].str.contains('GND'), 'I/O Type'] = 'GND'
-
-    part_name = fname.split('pkg')[0]
-    part_name = part_name.split('/')[-1].upper()
+    part_name = filepath.stem[:-3].upper()
     year = config['year']
     node = config['node']
     manufacturer = config['manufacturer']
     family = config['family']
 
-    pin_list = []
-    for idx, row in df.iterrows():
-        new_pin = Pin(
-            year,
-            node,
-            manufacturer,
-            family,
-            part_name,
-            row['Pin Name'],
-            row['Pin'],
-            row['I/O Type'],
-        )
-        pin_list.append(new_pin)
-    return pin_list
+    pins = []
+    with open(filepath, 'r') as f:
+        reader = csv.reader(f)
+        _, _, _, *data, _, _ = reader  # removes junk rows
+        for row in data:
+            pin_type = _pin_type_cleanup(row[1])
+            new_pin = Pin(
+                year,
+                node,
+                manufacturer,
+                family,
+                part_name,
+                row[1],
+                row[0],
+                pin_type,
+            )
+            pins.append(new_pin)
+
+    return pins
 
 
 if __name__ == '__main__':
     with open('data/xilinx/kintex_ultrascale/overview.toml', 'r') as f:
         config = toml.load(f)
 
-    x = parse_xilinx_ultrascale(
-        'data/xilinx/kintex_ultrascale/xcku025ffva1156pkg.csv',
+    x = parse_kintex_ultrascale(
+        Path('data/xilinx/kintex_ultrascale/xcku115flvd1517pkg.csv'),
         config,
     )
 
