@@ -40,13 +40,18 @@ def add_all_files(root_dir: str = 'data/') -> List[Path]:
 
     manager = database.DbManager()
     session = manager.open_session()
+
+    print("Parsing files...")
     for f in tqdm(files):
         pins = file_to_pins(f)
         for p in pins:
             session.add(p)
+    print("Done!")
 
+    print("Commiting to database...")
     session.commit()
     session.close()
+    print("Done!")
 
 
 if __name__ == '__main__':
