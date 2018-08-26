@@ -1,0 +1,6 @@
+# Xilinx Artix-7
+node = 28
+year = 2012
+parser = "parse_kintex_ultrascale"
+manufacturer = "Xilinx"
+family = "Xilinx Artix-7"

@@ -1,0 +1,6 @@
+# Xilinx Virtex-7
+node = 28
+year = 2011
+parser = "parse_kintex_ultrascale"
+manufacturer = "Xilinx"
+family = "Xilinx Virtex-7"
