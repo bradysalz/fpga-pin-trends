@@ -13,6 +13,8 @@ def _pin_type_cleanup(ptype: str) -> str:
         return 'VCC'
     if 'GND' in ptype:
         return 'GND'
+    if 'IO' in ptype:
+        return 'IO'
     return ptype
 
 

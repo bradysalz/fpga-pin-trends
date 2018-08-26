@@ -1,7 +1,7 @@
 # data/
 *.csv
 *.db
-
+*.txt
 
 __pycache__/
 

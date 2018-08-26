@@ -1,0 +1,6 @@
+# Xilinx Spartan-7
+node = 28
+year = 2017
+parser = "parse_kintex_ultrascale"
+manufacturer = "Xilinx"
+family = "Xilinx Spartan-7"
