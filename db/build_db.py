@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from pathlib import Path
 from typing import List
 
@@ -12,11 +13,9 @@ from parsers.parse_table import PARSE_TABLE
 def file_to_pins(filepath: str):
     config_file = Path(filepath).parent / 'overview.toml'
 
-    # Add in later!
     if not config_file.is_file():
-        return []
-        # raise FileNotFoundError(
-        #     f"No 'overview.toml' found for {config_file.parent}")
+        raise FileNotFoundError(
+            f"No 'overview.toml' found for {config_file.parent}")
 
     with open(config_file) as f:
         config = toml.load(f)
@@ -55,4 +54,13 @@ def add_all_files(root_dir: str = 'data/') -> List[Path]:
 
 
 if __name__ == '__main__':
+    if os.path.exists('pin_out.db'):
+        raise FileExistsError(
+            "'pin_out.db' already exists, please delete and retry")
+
+    print("Creating database...")
+    manager = database.DbManager()
+    manager._create_db()
+    print("Database created")
+
     add_all_files()

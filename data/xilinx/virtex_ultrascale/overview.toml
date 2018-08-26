@@ -1,0 +1,6 @@
+# Xilinx Virtex Ultrascale
+node = 20
+year = 2014
+parser = "parse_kintex_ultrascale"
+manufacturer = "Xilinx"
+family = "Virtex Ultrascale"

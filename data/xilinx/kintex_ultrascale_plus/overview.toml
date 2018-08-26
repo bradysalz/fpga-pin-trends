@@ -1,0 +1,6 @@
+# Xilinx Kintex Ultrascale Plus
+node = 16
+year = 2016
+parser = "parse_kintex_ultrascale_plus"
+manufacturer = "Xilinx"
+family = "Kintex Ultrascale Plus"
