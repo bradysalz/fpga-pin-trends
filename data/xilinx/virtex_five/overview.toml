@@ -1,0 +1,6 @@
+# Xilinx Virtex-5
+node = 65
+year = 2006
+parser = "parse_xilinx_virtex_five"
+manufacturer = "Xilinx"
+family = "Virtex-5"

@@ -50,13 +50,35 @@ class Pin(Base):
         This is currently a no-op, but there might be a need for parsing,
         later so might as well have it in now.
         """
-        self.year = year
-        self.process = process
+
+        if type(year) is str:
+            self.year = int(year)
+        else:
+            self.year = year
+
+        if type(process) is str:
+            self.process = int(process)
+        else:
+            self.process = process
+
+        if type(manufacturer) is not str:
+            raise TypeError(f"Invalid manufacturer type:"
+                            "{type(manufacturer)}, {manufacturer}")
+
         self.manufacturer = manufacturer
         self.family = family
         self.part = part
+
+        if pin_name is "" or not pin_name:
+            raise ValueError("No pin name given")
         self.pin_name = pin_name
+
+        if pin_id is "" or not pin_id:
+            raise ValueError("No pin ID given")
         self.pin_id = pin_id
+
+        if pin_type is "" or not pin_type:
+            raise ValueError("No pin type given")
         self.pin_type = pin_type
 
     def as_dict(self) -> Dict:

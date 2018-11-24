@@ -41,21 +41,25 @@ def parse_kintex_ultrascale_plus(filepath: Path, config: Dict) -> List[Pin]:
         reader = csv.reader(f)
         *data, _, _ = reader  # removes junk rows
         for row in data:
-            if len(row) == 1:
+            if len(row) == 1 or row[0] is '':
                 continue
 
-            pin_type = _pin_type_cleanup(row[1])
-            new_pin = Pin(
-                year,
-                node,
-                manufacturer,
-                family,
-                part_name,
-                row[1],
-                row[0],
-                pin_type,
-            )
-            pins.append(new_pin)
+            try:
+                pin_type = _pin_type_cleanup(row[1])
+                new_pin = Pin(
+                    year,
+                    node,
+                    manufacturer,
+                    family,
+                    part_name,
+                    row[1],
+                    row[0],
+                    pin_type,
+                )
+                pins.append(new_pin)
+            except ValueError:
+                print(row)
+                input()
 
     return pins
 

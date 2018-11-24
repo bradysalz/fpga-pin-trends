@@ -1,0 +1,6 @@
+# Xilinx Virtex-4
+node = 90
+year = 2005
+parser = "parse_xilinx_virtex_four"
+manufacturer = "Xilinx"
+family = "Virtex-4"

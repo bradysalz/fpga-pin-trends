@@ -45,16 +45,19 @@ def add_all_files(root_dir: str = 'data/') -> List[Path]:
     """
     root_path = Path(root_dir)
     files = [f for f in root_path.glob('**/*.csv')]
+    files = files + [f for f in root_path.glob('**/*.txt')]
 
     manager = database.DbManager()
     session = manager.open_session()
 
+    total_pins = 0
     print("Parsing files...")
     for f in tqdm(files):
         pins = file_to_pins(f)
+        total_pins += len(pins)
         for p in pins:
             session.add(p)
-    print("Done!")
+    print(f"Added {total_pins} pins.")
 
     print("Commiting to database...")
     session.commit()
@@ -64,12 +67,13 @@ def add_all_files(root_dir: str = 'data/') -> List[Path]:
 
 if __name__ == '__main__':
     if os.path.exists('pin_out.db'):
-        raise FileExistsError(
-            "'pin_out.db' already exists, please delete and retry")
+        os.remove('pin_out.db')
+        # raise FileExistsError(
+        # "'pin_out.db' already exists, please delete and retry")
 
     print("Creating database...")
     manager = database.DbManager()
     manager._create_db()
-    print("Database created")
+    print("Database created.")
 
     add_all_files()
