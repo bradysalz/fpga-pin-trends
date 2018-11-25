@@ -9,7 +9,7 @@ from db.pin import Pin
 
 
 def _pin_type_cleanup(ptype: str) -> str:
-    if 'VCC' or 'VTT' in ptype:
+    if 'VCC' in ptype or 'VTT' in ptype:
         return 'VCC'
     if 'GND' in ptype:
         return 'GND'
@@ -68,8 +68,10 @@ if __name__ == '__main__':
         config = toml.load(f)
 
     x = parse_kintex_ultrascale(
-        Path('data/xilinx/kintex_ultrascale/xcku115flvd1517pkg.csv'),
+        Path('data/xilinx/artix_seven/xc7a15tcsg324pkg.csv'),
         config,
     )
 
-    print([str(y) for y in x])
+    for y in x:
+        print(y.as_dict())
+    # print([str(y) for y in x])
