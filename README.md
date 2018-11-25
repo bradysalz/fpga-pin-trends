@@ -9,6 +9,7 @@ This repo is probably going to be 90% code dedicated to data cleanup, and 10% ~~
 ## Data
 
 This entire repo revolves around pin-outs of a huge number of components, none of which were designed by me. I've included this data in the repo under `data/` in order to make everything simpler. It's organized as:
+
 ```
 data
 ├───manufacturer_A
@@ -39,6 +40,7 @@ All of the pin out data comes from downloading (a huge number) of files from the
 * [Intel Altera Pin-Outs](https://www.intel.com/content/www/us/en/programmable/support/literature/lit-dp.html)
 * [Xilinx Package Files Portal](https://www.xilinx.com/support/package-pinout-files.html)
 
+I've shortened "Intel Altera" to simply "Altera" everywhere else, for simplicity.
 
 ## License
 
