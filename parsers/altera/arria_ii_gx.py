@@ -53,8 +53,8 @@ def parse_altera_arria_ii_gx(filepath: Path, config: Dict) -> List[Pin]:
             pin_id_idx, part_tail = part
             part_name = part_root + part_tail
             for row in data:
-                if len(row) < 2 or row[0] == '':
-                    continue
+                # if len(row) < 2 or row[0] == '':
+                # continue
 
                 try:
                     pin_name = row[2]

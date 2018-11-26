@@ -1,0 +1,6 @@
+# Altera II GX
+node = 40
+year = 2009
+parser = "parse_altera_arria_ii_gx"
+manufacturer = "Altera"
+family = "Arria-II GX"

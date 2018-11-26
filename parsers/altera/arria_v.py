@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import csv
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 import toml
 
@@ -18,6 +18,29 @@ def _pin_type_cleanup(ptype: str) -> str:
     return ptype
 
 
+def find_part_start(rows: List[str]) -> Tuple[int, str]:
+    """Find the starting row for all parts in a file.
+
+    Altera is dumb and concats what should be independent CSVs into one file,
+    which makes it incredibly hard to parse. This helps us find the starting
+    points for each one.
+    """
+    parts = []
+    for idx_row, row in enumerate(rows):
+        if row and row[0].startswith('Bank'):
+            for idx_col, val in enumerate(row):
+                if val[0] in ['F', 'U']:  # lol
+                    try:
+                        # Trying to find "1152" in "F1152 "
+                        val = val.split(' ')[0]
+                        int(val[1:])
+                        parts.append((idx_row, idx_col, val))
+                    except ValueError:
+                        continue
+    print(parts)
+    return parts
+
+
 def parse_altera_arria_v(filepath: Path, config: Dict) -> List[Pin]:
     """Parse Altera Arrian GX pinout to a Pin list.
 
@@ -28,7 +51,7 @@ def parse_altera_arria_v(filepath: Path, config: Dict) -> List[Pin]:
     Returns:
         Pin list of parsed data
     """
-    part_root = filepath.stem.upper()
+    part_root = filepath.stem.upper().split('-')[0]
     year = config['year']
     node = config['node']
     manufacturer = config['manufacturer']
@@ -38,11 +61,12 @@ def parse_altera_arria_v(filepath: Path, config: Dict) -> List[Pin]:
 
     with open(filepath, 'r', encoding='cp1252') as f:
         reader = csv.reader(f, delimiter='\t')
-        _, _, _, headers, _, *data = reader  # removes junk rows
+        header, *data = reader  # removes junk rows
 
         parts = []
-        for idx, val in enumerate(headers):
-            if val[0] in ['F', 'U']:  # lol
+        for idx, val in enumerate(header):
+            val = val.split(' ')[0]
+            if val and val[0] in ['F', 'U']:  # lol
                 try:
                     int(val[1:])
                     parts.append((idx, val))
@@ -53,9 +77,6 @@ def parse_altera_arria_v(filepath: Path, config: Dict) -> List[Pin]:
             pin_id_idx, part_tail = part
             part_name = part_root + part_tail
             for row in data:
-                if len(row) < 2 or row[0] == '':
-                    continue
-
                 try:
                     pin_name = row[2]
                     pin_id = row[pin_id_idx]
@@ -74,13 +95,15 @@ def parse_altera_arria_v(filepath: Path, config: Dict) -> List[Pin]:
 
 
 if __name__ == '__main__':
-    with open('data/altera/arria-ii-gx/overview.toml', 'r') as f:
+    with open('data/altera/arria-v/overview.toml', 'r') as f:
         config = toml.load(f)
 
     x = parse_altera_arria_v(
-        Path('data/altera/arria-ii-gx/ep2agx125.txt'),
+        Path('data/altera/arria-v/5asxmb5-1.txt'),
         config,
     )
 
     for y in x:
-        print(y.as_dict())
+        # print(y.as_dict())
+        pass
+    print(len(x))

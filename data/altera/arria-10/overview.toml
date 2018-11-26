@@ -1,0 +1,6 @@
+# Altera Arria 10
+node = 20
+year = 2013
+parser = "parse_altera_arria_ten"
+manufacturer = "Altera"
+family = "Arria-10"

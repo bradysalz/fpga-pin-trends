@@ -29,7 +29,7 @@ def parse_altera_arria_ten(filepath: Path, config: Dict) -> List[Pin]:
         Pin list of parsed data
     """
 
-    part_name = filepath.stem.upper()
+    part_name = filepath.stem.upper().split('-')[0]
     year = config['year']
     node = config['node']
     manufacturer = config['manufacturer']
@@ -54,16 +54,8 @@ def parse_altera_arria_ten(filepath: Path, config: Dict) -> List[Pin]:
                 continue
 
             pin_type = _pin_type_cleanup(pin_name)
-            new_pin = Pin(
-                year,
-                node,
-                manufacturer,
-                family,
-                part_name,
-                pin_name,
-                pin_id,
-                pin_type,
-            )
+            new_pin = Pin(year, node, manufacturer, family, part_name,
+                          pin_name, pin_id, pin_type)
             pins.append(new_pin)
 
     return pins
@@ -74,7 +66,7 @@ if __name__ == '__main__':
         config = toml.load(f)
 
     x = parse_altera_arria_ten(
-        Path('data/altera/arria-10/10as016.txt'),
+        Path('data/altera/arria-10/10as016-1.txt'),
         config,
     )
 

@@ -1,0 +1,6 @@
+# Altera GX
+node = 90
+year = 2007
+parser = "parse_altera_arria_gx"
+manufacturer = "Altera"
+family = "Arria GX"
