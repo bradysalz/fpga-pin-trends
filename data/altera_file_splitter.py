@@ -14,10 +14,13 @@ from pathlib import Path
 
 def main(root: str):
     root_path = Path(root)
-    orig_files = [f for f in root_path.glob('*.txt')]
-    for orig_file in orig_files:
-        os.rename(orig_file, orig_file.with_suffix('tmp'))
 
+    # Stash old files
+    tmp_files = [f for f in root_path.glob('*.txt')]
+    for tmp_file in tmp_files:
+        os.rename(tmp_file, tmp_file.with_suffix('.tmp'))
+
+    # Loop through and separate the new files
     orig_files = [f for f in root_path.glob('*.tmp')]
     for orig_file in orig_files:
         idx = 0
@@ -46,7 +49,6 @@ if __name__ == '__main__':
     if len(sys.argv) == 1:
         main(os.getcwd())
     elif len(sys.argv) == 2:
-
         main(sys.argv[1])
     else:
         print("Wrong number of args.")

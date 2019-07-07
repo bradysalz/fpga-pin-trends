@@ -18,8 +18,8 @@ def _pin_type_cleanup(ptype: str) -> str:
     return ptype
 
 
-def parse_altera_arria_ten(filepath: Path, config: Dict) -> List[Pin]:
-    """Parse Altera Arrian-10 pinout to a Pin list.
+def parse_altera_cyclone_ten(filepath: Path, config: Dict) -> List[Pin]:
+    """Parse Altera Cyclone-10 pinout to a Pin list.
 
     Args:
         fname: filename as a string
@@ -28,8 +28,7 @@ def parse_altera_arria_ten(filepath: Path, config: Dict) -> List[Pin]:
     Returns:
         Pin list of parsed data
     """
-
-    part_name = filepath.stem.upper().split('-')[0]
+    part_root = filepath.stem.upper().split('-')[0]
     year = config['year']
     node = config['node']
     manufacturer = config['manufacturer']
@@ -39,16 +38,29 @@ def parse_altera_arria_ten(filepath: Path, config: Dict) -> List[Pin]:
 
     with open(filepath, 'r', encoding='cp1252') as f:
         reader = csv.reader(f, delimiter='\t')
-        _, _, _, _, *data = reader  # removes junk rows
+        header, *data = reader  # removes junk rows
+        for idx, val in enumerate(header):
+            if val and val[0] in ['E', 'F', 'M', 'U']:
+                try:
+                    val = val.split(' ')[0]
+                    int(val[1:])
+                    pin_id_idx = idx
+                    part_tail = val
+                except ValueError:
+                    continue
+            if val and (val.startswith('Pin Name')
+                        or val.startswith('PinName')):
+                pin_name_idx = idx
+
+        part_name = part_root + part_tail
         for row in data:
             try:
-                pin_name = row[3]
-                pin_id = row[10]
+                pin_name = row[pin_name_idx]
+                pin_id = row[pin_id_idx]
             except IndexError:
                 continue
 
             if pin_name == '' or pin_id == '':
-                # print(row)
                 continue
 
             pin_type = _pin_type_cleanup(pin_name)
@@ -60,14 +72,15 @@ def parse_altera_arria_ten(filepath: Path, config: Dict) -> List[Pin]:
 
 
 if __name__ == '__main__':
-    with open('data/altera/arria-10/overview.toml', 'r') as f:
+    with open('data/altera/cyclone-v/overview.toml', 'r') as f:
         config = toml.load(f)
 
-    x = parse_altera_arria_ten(
-        Path('data/altera/arria-10/10as016-1.txt'),
+    x = parse_altera_cyclone_ten(
+        Path('data/altera/cyclone-v/5cseba2-1.txt'),
         config,
     )
 
     for y in x:
         print(y.as_dict())
-    # print([y.as_dict() for y in x])
+        pass
+    print(len(x))

@@ -48,7 +48,7 @@ def parse_altera_arria_gx(filepath: Path, config: Dict) -> List[Pin]:
         for part in parts:
             pin_id_idx, part_name = part
             for row in data:
-                if len(row) < 2 or row[0] == '':
+                if len(row) < 2:
                     continue
 
                 try:
@@ -73,7 +73,7 @@ if __name__ == '__main__':
         config = toml.load(f)
 
     x = parse_altera_arria_gx(
-        Path('data/altera/arria-gx/ep1agx90.txt'),
+        Path('data/altera/arria-gx/ep1agx60.txt'),
         config,
     )
 

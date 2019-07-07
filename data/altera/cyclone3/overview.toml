@@ -1,0 +1,6 @@
+# Altera Cyclone III
+node = 65
+year = 2007
+parser = "parse_altera_cyclone_iii"
+manufacturer = "Altera"
+family = "Cyclone III"

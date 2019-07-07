@@ -1,0 +1,6 @@
+# Altera Cyclone II
+node = 90
+year = 2004
+parser = "parse_altera_cyclone"
+manufacturer = "Altera"
+family = "Cyclone-II"

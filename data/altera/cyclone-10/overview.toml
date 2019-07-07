@@ -1,0 +1,6 @@
+# Altera Cyclone 10
+node = 60
+year = 2017
+parser = "parse_altera_cyclone_ten"
+manufacturer = "Altera"
+family = "Cyclone-10"

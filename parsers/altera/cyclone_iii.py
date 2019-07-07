@@ -18,8 +18,8 @@ def _pin_type_cleanup(ptype: str) -> str:
     return ptype
 
 
-def parse_altera_arria_ii_gx(filepath: Path, config: Dict) -> List[Pin]:
-    """Parse Altera Arrian GX pinout to a Pin list.
+def parse_altera_cyclone_iii(filepath: Path, config: Dict) -> List[Pin]:
+    """Parse Altera Cyclone III pinout to a Pin list.
 
     Args:
         fname: filename as a string
@@ -28,7 +28,7 @@ def parse_altera_arria_ii_gx(filepath: Path, config: Dict) -> List[Pin]:
     Returns:
         Pin list of parsed data
     """
-    part_root = filepath.stem.upper()
+    part_root = filepath.stem.upper().split('-')[0]
     year = config['year']
     node = config['node']
     manufacturer = config['manufacturer']
@@ -38,20 +38,28 @@ def parse_altera_arria_ii_gx(filepath: Path, config: Dict) -> List[Pin]:
 
     with open(filepath, 'r', encoding='cp1252') as f:
         reader = csv.reader(f, delimiter='\t')
-        _, _, _, headers, _, *data = reader  # removes junk rows
+        _, _, _, headers, *data = reader  # removes junk rows
 
         parts = []
         for idx, val in enumerate(headers):
-            if val[0] in ['F', 'U']:  # lol
-                try:
-                    int(val[1:])
-                    parts.append((idx, val))
-                except ValueError:
-                    continue
+            if val and val[0] in ['E', 'F', 'M', 'T', 'Q', 'U']:
+                if '/' in val:
+                    try:
+                        [int(v[1:]) for v in val.split('/')]
+                        [parts.append((idx, v)) for v in val.split('/')]
+                    except ValueError:
+                        continue
+                else:
+                    try:
+                        int(val[1:])
+                        parts.append((idx, val))
+                    except ValueError:
+                        continue
 
         for part in parts:
             pin_id_idx, part_tail = part
             part_name = part_root + part_tail
+
             for row in data:
                 try:
                     pin_name = row[2]
@@ -71,13 +79,20 @@ def parse_altera_arria_ii_gx(filepath: Path, config: Dict) -> List[Pin]:
 
 
 if __name__ == '__main__':
-    with open('data/altera/arria-ii-gx/overview.toml', 'r') as f:
+    with open('data/altera/cyclone3/overview.toml', 'r') as f:
         config = toml.load(f)
 
-    x = parse_altera_arria_ii_gx(
-        Path('data/altera/arria-ii-gx/ep2agx125.txt'),
+    x = parse_altera_cyclone_iii(
+        Path('data/altera/cyclone3/ep3c40.txt'),
         config,
     )
 
-    for y in x:
-        print(y.as_dict())
+    # for y in x:
+    #     print(y.as_dict())
+    #     pass
+    #  Q240	F324	F484/U484	F780
+    print(len([p for p in x if p.part.endswith('Q240')]))
+    print(len([p for p in x if p.part.endswith('F324')]))
+    print(len([p for p in x if p.part.endswith('F484')]))
+    print(len([p for p in x if p.part.endswith('U484')]))
+    print(len([p for p in x if p.part.endswith('F780')]))

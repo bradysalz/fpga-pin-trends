@@ -37,7 +37,7 @@ def find_part_start(rows: List[str]) -> Tuple[int, str]:
                         parts.append((idx_row, idx_col, val))
                     except ValueError:
                         continue
-    print(parts)
+    # print(parts)
     return parts
 
 

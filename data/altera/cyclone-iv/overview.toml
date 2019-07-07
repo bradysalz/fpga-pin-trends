@@ -1,0 +1,6 @@
+# Altera Cyclone IV
+node = 60
+year = 2010
+parser = "null"
+manufacturer = "Altera"
+family = "Cyclone-IV"

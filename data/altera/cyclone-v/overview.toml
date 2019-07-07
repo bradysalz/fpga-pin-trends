@@ -1,0 +1,6 @@
+# Altera Cyclone V
+node = 28
+year = 2011
+parser = "parse_altera_cyclone_ten"
+manufacturer = "Altera"
+family = "Cyclone-V"
