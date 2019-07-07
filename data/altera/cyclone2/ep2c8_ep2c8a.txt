@@ -1,0 +1,1104 @@
+"Pin Information for the Cyclone® II EP2C8 and EP2C8A Devices Version 1.9 Notes (1), (2)    "													
+													
+													
+Bank Number	VREFB Group	Pin Name / Function	Optional Function(s)	Configuration Function	T144	Q208	F256	DQS for x8/x9 in T144	DQS for x8/x9 in Q208	DQS for x16/x18 in Q208	DQS for x8/x9 in F256	DQS for x16/x18 in F256	
+B1	VREFB1N0	IO	ASDO	ASDO	1	1	C3						
+B1	VREFB1N0	IO	nCSO	nCSO	2	2	F4						
+B1	VREFB1N0	IO	LVDS15p	CRC_ERROR	3	3	C1						
+B1	VREFB1N0	IO	LVDS15n	CLKUSR	4	4	C2						
+B1	VREFB1N0	IO	LVDS14p			5	D5						
+B1	VREFB1N0	IO	LVDS14n			6	E5						
+B1	VREFB1N0	VCCIO1			5	7							
+B1	VREFB1N0	IO	LVDS13p			8	F5		DQ1L0				
+B1	VREFB1N0	GND			6	9							
+B1	VREFB1N0	IO	LVDS13n			10			DQ1L1				
+B1	VREFB1N0	IO	LVDS12p			11	D3		DQ1L2		DQ0L0	DQ1L0	
+B1	VREFB1N0	IO	LVDS12n			12	D4		DQ1L3		DQ0L1	DQ1L1	
+B1	VREFB1N0	VCCIO1										
+B1	VREFB1N0	IO	VREFB1N0		7	13	F3					
+B1	VREFB1N0	IO	LVDS11p				D2					
+B1	VREFB1N0	IO	LVDS11n				D1				DQ0L2	DQ1L2
+B1	VREFB1N0	IO	LVDS10p				E3				DQ0L3	DQ1L3
+B1	VREFB1N0	IO	LVDS10n				E4				DQ0L4	DQ1L4
+B1	VREFB1N0	GND										
+B1	VREFB1N0	IO					G4					
+B1	VREFB1N0	IO	LVDS9p				J6					
+B1	VREFB1N0	IO	LVDS9n				H6					
+B1	VREFB1N0	IO	LVDS8p		8	14	E1	DPCLK0/DQS0L	DPCLK0/DQS0L	DPCLK0/DQS0L	DPCLK0/DQS0L	DPCLK0/DQS0L
+B1	VREFB1N0	IO	LVDS8n		9	15	E2				DQ0L5	DQ1L5
+B1	VREFB1N0	VCCIO1										
+B1	VREFB1N0	TDO		TDO	10	16	G2					
+B1	VREFB1N0	TMS		TMS	11	17	G1					
+B1	VREFB1N0	TCK		TCK	12	18	F2					
+B1	VREFB1N0	TDI		TDI	13	19	H5					
+B1	VREFB1N0	DATA0	DATA0	DATA0	14	20	F1					
+B1	VREFB1N0	DCLK	DCLK	DCLK	15	21	H4					
+B1	VREFB1N0	nCE		nCE	16	22	G5					
+B1	VREFB1N0	CLK0	LVDSCLK0p/input(3)		17	23	H2					
+B1	VREFB1N0	CLK1	LVDSCLK0n/input(3)		18	24	H1					
+B1	VREFB1N0	GND			19	25						
+B1	VREFB1N0	nCONFIG		nCONFIG	20	26	J5					
+B1	VREFB1N1	CLK2	LVDSCLK1p/input(3)		21	27	J2					
+B1	VREFB1N1	CLK3	LVDSCLK1n/input(3)		22	28	J1					
+B1	VREFB1N1	VCCIO1			23	29						
+B1	VREFB1N1	IO	LVDS7p		24	30	K2	DPCLK1/DQS1L	DPCLK1/DQS1L	DPCLK1/DQS1L	DPCLK1/DQS1L	DPCLK1/DQS1L
+B1	VREFB1N1	IO	LVDS7n		25	31	K1				DQ0L6	DQ1L6
+B1	VREFB1N1	IO	LVDS6p				K4				DQ0L7	DQ1L7
+B1	VREFB1N1	VCCINT			26	32						
+B1	VREFB1N1	IO	LVDS6n			33	K5		DQ1L4			DQ1L8
+B1	VREFB1N1	IO				34			DQ1L5			
+B1	VREFB1N1	IO	LVDS5p			35	L1		DQ1L6		DM0L	DM1L0/BWS#1L0
+B1	VREFB1N1	GND			27	36						
+B1	VREFB1N1	IO	LVDS5n				L2				DQ1L0	DQ1L9
+B1	VREFB1N1	GND										
+B1	VREFB1N1	IO	VREFB1N1		28	37	J4					
+B1	VREFB1N1	VCCIO1										
+B1	VREFB1N1	IO	LVDS4p				M1					
+B1	VREFB1N1	IO	LVDS4n				M2				DQ1L1	DQ1L10
+B1	VREFB1N1	IO	LVDS3p				M3				DQ1L2	DQ1L11
+B1	VREFB1N1	GND				38						
+B1	VREFB1N1	IO	LVDS3n			39	L3		DQ1L7			
+B1	VREFB1N1	IO	LVDS2p			40	N1		DQ1L8		DQ1L3	DQ1L12
+B1	VREFB1N1	IO	LVDS2n			41	N2		DM1L/BWS#1L		DQ1L4	DQ1L13
+B1	VREFB1N1	IO	LVDS1p				P1				DQ1L5	DQ1L14
+B1	VREFB1N1	IO	LVDS1n				P2				DQ1L6	DQ1L15
+B1	VREFB1N1	VCCIO1			29	42						
+B1	VREFB1N1	IO				43						
+B1	VREFB1N1	IO	LVDS0p			44	N3				DQ1L7	DQ1L16
+B1	VREFB1N1	IO	LVDS0n			45	N4				DQ1L8	DQ1L17
+B1	VREFB1N1	IO			30	46	P3				DM1L/BWS#1L	DM1L1/BWS#1L1
+B1	VREFB1N1	IO	PLL1_OUTp		31	47	L4					
+B1	VREFB1N1	IO	PLL1_OUTn		32	48	M4					
+B1	VREFB1N1	GND			33	49						
+B1	VREFB1N1	GND_PLL1			34	50	L5					
+B1	VREFB1N1	VCCD_PLL1			35	51	L6					
+B1	VREFB1N1	GND_PLL1			36	52	N5					
+B4	VREFB4N1	VCCA_PLL1			37	53	M5					
+B4	VREFB4N1	GNDA_PLL1			38	54	M6					
+B4	VREFB4N1	GND			39	55						
+B4	VREFB4N1	IO	LVDS77n	DEV_OE	40	56	R3					
+B4	VREFB4N1	IO	LVDS77p		41	57	T3	DM1B/BWS#1B	DM1B/BWS#1B	DM1B1/BWS#1B1	DM1B/BWS#1B	DM1B1/BWS#1B1
+B4	VREFB4N1	IO	LVDS76p		42	58	P5	DQ1B8	DQ1B8	DQ1B17	DQ1B8	DQ1B17
+B4	VREFB4N1	IO	LVDS76n		43	59	P4	DQ1B7	DQ1B7	DQ1B16	DQ1B7	DQ1B16
+B4	VREFB4N1	IO	LVDS75p		44	60	T4	DQ1B6	DQ1B6	DQ1B15	DQ1B6	DQ1B15
+B4	VREFB4N1	IO	LVDS75n		45	61	R4	DQ1B5	DQ1B5	DQ1B14	DQ1B5	DQ1B14
+B4	VREFB4N1	VCCIO4			46	62						
+B4	VREFB4N1	IO	LVDS74p		47	63	T5	DPCLK2/DQS1B	DPCLK2/DQS1B	DPCLK2/DQS1B	DPCLK2/DQS1B	DPCLK2/DQS1B
+B4	VREFB4N1	GND										
+B4	VREFB4N1	IO	LVDS74n		48	64	R5				DQ1B4	DQ1B13
+B4	VREFB4N1	IO					N7					
+B4	VREFB4N1	IO	LVDS73p				K7					
+B4	VREFB4N1	IO	LVDS73n				K6					
+B4	VREFB4N1	VCCIO4										
+B4	VREFB4N1	GND										
+B4	VREFB4N1	IO	LVDS72p				T6					
+B4	VREFB4N1	GND			49	65						
+B4	VREFB4N1	IO	LVDS72n				R6					
+B4	VREFB4N1	IO	LVDS71p				P6				DQ1B3	DQ1B12
+B4	VREFB4N1	IO	LVDS71n				N6				DQ1B2	DQ1B11
+B4	VREFB4N1	VCCINT			50	66						
+B4	VREFB4N1	IO	VREFB4N1		51	67	N8					
+B4	VREFB4N1	VCCIO4										
+B4	VREFB4N1	GND										
+B4	VREFB4N1	IO	LVDS70p		52	68	T7	DQ1B4	DQ1B4	DQ1B13	DQ1B1	DQ1B10
+B4	VREFB4N1	IO	LVDS70n			69	R7		DQ1B3	DQ1B12	DQ1B0	DQ1B9
+B4	VREFB4N1	IO	LVDS69p				L7					
+B4	VREFB4N1	IO	LVDS69n				L8					
+B4	VREFB4N1	IO	LVDS68p		53	70	T8	DQ1B3	DQ1B2	DQ1B11		
+B4	VREFB4N1	VCCIO4			54	71						
+B4	VREFB4N1	IO	LVDS68n		55	72	R8	DQ1B2	DQ1B1	DQ1B10		DM1B0/BWS#1B0
+B4	VREFB4N1	GND			56	73						
+B4	VREFB4N1	IO	LVDS67p		57	74	T9	DQ1B1	DQ1B0	DQ1B9		
+B4	VREFB4N1	IO	LVDS67n		58	75	R9	DQ1B0				
+B4	VREFB4N0	IO	LVDS66p		59	76	N9					
+B4	VREFB4N0	IO	LVDS66n		60	77	N10					
+B4	VREFB4N0	GND			61	78						
+B4	VREFB4N0	IO	LVDS65p				T11					
+B4	VREFB4N0	VCCINT			62	79						
+B4	VREFB4N0	IO	LVDS65n				R11				DM0B	DQ1B8
+B4	VREFB4N0	VCCIO4										
+B4	VREFB4N0	IO				80	P11					
+B4	VREFB4N0	GND										
+B4	VREFB4N0	IO	LVDS64p			81	L9					
+B4	VREFB4N0	IO	LVDS64n			82	L10					
+B4	VREFB4N0	VCCIO4				83						
+B4	VREFB4N0	IO	LVDS63p			84	R10		DM0B	DM1B0/BWS#1B0		
+B4	VREFB4N0	GND				85						
+B4	VREFB4N0	IO	LVDS63n			86	T10			DQ1B8	DQ0B7	DQ1B7
+B4	VREFB4N0	IO	LVDS62p			87	K11		DQ0B7	DQ1B7		
+B4	VREFB4N0	IO	LVDS62n			88	K10		DQ0B6	DQ1B6		
+B4	VREFB4N0	IO	VREFB4N0		63	89	N11					
+B4	VREFB4N0	IO	LVDS61p			90	P12		DQ0B5	DQ1B5	DQ0B6	DQ1B6
+B4	VREFB4N0	VCCIO4				91						
+B4	VREFB4N0	IO	LVDS61n			92	P13		DQ0B4	DQ1B4	DQ0B5	DQ1B5
+B4	VREFB4N0	GND				93						
+B4	VREFB4N0	IO	LVDS60p		64	94	T12	DPCLK4/DQS0B	DPCLK4/DQS0B	DPCLK4/DQS0B	DPCLK4/DQS0B	DPCLK4/DQS0B
+B4	VREFB4N0	IO	LVDS60n		65	95	R12				DQ0B4	DQ1B4
+B4	VREFB4N0	IO				96			DQ0B3	DQ1B3		
+B4	VREFB4N0	IO	LVDS59p			97	T13		DQ0B2	DQ1B2	DQ0B3	DQ1B3
+B4	VREFB4N0	VCCIO4			66	98						
+B4	VREFB4N0	IO	LVDS59n		67	99	R13		DQ0B1	DQ1B1	DQ0B2	DQ1B2
+B4	VREFB4N0	GND			68	100						
+B4	VREFB4N0	IO	LVDS58p		69	101	T14		DQ0B0	DQ1B0	DQ0B1	DQ1B1
+B4	VREFB4N0	IO	LVDS58n		70	102	R14				DQ0B0	DQ1B0
+B4	VREFB4N0	IO	LVDS57p		71	103	M11					
+B4	VREFB4N0	IO	LVDS57n		72	104	L11					
+B3	VREFB3N1	IO	LVDS56n		73	105	N12	DM1R/BWS#1R				
+B3	VREFB3N1	IO	LVDS56p		74	106	M12	DQ1R8	DM1R/BWS#1R	DM1R1/BWS#1R1		
+B3	VREFB3N1	IO	LVDS55n				L12					
+B3	VREFB3N1	IO	LVDS55p				K13					
+B3	VREFB3N1	IO	LVDS54n	INIT_DONE	75	107	N13					
+B3	VREFB3N1	IO	LVDS54p	nCEO	76	108	N14					
+B3	VREFB3N1	VCCIO3			77	109						
+B3	VREFB3N1	IO	LVDS53n			110	P15		DQ1R8	DQ1R17	DM1R/BWS#1R	DM1R1/BWS#1R1
+B3	VREFB3N1	GND			78	111						
+B3	VREFB3N1	IO	LVDS53p			112	P16		DQ1R7	DQ1R16	DQ1R8	DQ1R17
+B3	VREFB3N1	IO	LVDS52n			113	N15		DQ1R6	DQ1R15	DQ1R7	DQ1R16
+B3	VREFB3N1	IO	LVDS52p			114	N16		DQ1R5	DQ1R14	DQ1R6	DQ1R15
+B3	VREFB3N1	IO					P14				DQ1R5	DQ1R14
+B3	VREFB3N1	IO	LVDS51n			115			DQ1R4	DQ1R13		
+B3	VREFB3N1	IO	LVDS51p			116			DQ1R3	DQ1R12		
+B3	VREFB3N1	IO	VREFB3N1		79	117	M14					
+B3	VREFB3N1	IO	LVDS50n				M15				DQ1R4	DQ1R13
+B3	VREFB3N1	VCCIO3										
+B3	VREFB3N1	IO	LVDS50p				M16					
+B3	VREFB3N1	GND										
+B3	VREFB3N1	IO				118			DQ1R2	DQ1R11		
+B3	VREFB3N1	GND			80	119						
+B3	VREFB3N1	IO					L14					
+B3	VREFB3N1	IO	LVDS49n				L15				DQ1R3	DQ1R12
+B3	VREFB3N1	IO	LVDS49p				L16				DQ1R2	DQ1R11
+B3	VREFB3N1	VCCINT			81	120						
+B3	VREFB3N1	nSTATUS		nSTATUS	82	121	M13					
+B3	VREFB3N1	VCCIO3				122						
+B3	VREFB3N1	CONF_DONE		CONF_DONE	83	123	L13					
+B3	VREFB3N1	GND				124						
+B3	VREFB3N1	MSEL1		MSEL1	84	125	K12					
+B3	VREFB3N1	MSEL0		MSEL0	85	126	J13					
+B3	VREFB3N1	IO	LVDS48n		86	127	K16	DQ1R7	DQ1R1	DQ1R10	DQ1R1	DQ1R10
+B3	VREFB3N1	IO	LVDS48p		87	128	K15	DPCLK6/DQS1R	DPCLK6/DQS1R	DPCLK6/DQS1R	DPCLK6/DQS1R	DPCLK6/DQS1R
+B3	VREFB3N1	CLK7	LVDSCLK3n/input(3)		88	129	J16					
+B3	VREFB3N1	CLK6	LVDSCLK3p/input(3)		89	130	J15					
+B3	VREFB3N0	CLK5	LVDSCLK2n/input(3)		90	131	H15					
+B3	VREFB3N0	CLK4	LVDSCLK2p/input(3)		91	132	H16					
+B3	VREFB3N0	IO	LVDS47n		92	133	H12	DQ1R6	DQ1R0	DQ1R9	DQ1R0	DQ1R9
+B3	VREFB3N0	IO	LVDS47p		93	134	J12	DPCLK7/DQS0R	DPCLK7/DQS0R	DPCLK7/DQS0R	DPCLK7/DQS0R	DPCLK7/DQS0R
+B3	VREFB3N0	IO	LVDS46n		94	135	G16	DQ1R5	DM0R	DM1R0/BWS#1R0	DM0R	DM1R0/BWS#1R0
+B3	VREFB3N0	VCCIO3			95	136						
+B3	VREFB3N0	IO	LVDS46p		96	137	G15	DQ1R4		DQ1R8		DQ1R8
+B3	VREFB3N0	IO	LVDS45n		97	138	F15	DQ1R3	DQ0R7	DQ1R7	DQ0R7	DQ1R7
+B3	VREFB3N0	IO	LVDS45p			139	F16		DQ0R6	DQ1R6	DQ0R6	DQ1R6
+B3	VREFB3N0	GND			98	140						
+B3	VREFB3N0	IO	LVDS44n			141	J11		DQ0R5	DQ1R5		
+B3	VREFB3N0	IO	LVDS44p			142	H11		DQ0R4	DQ1R4		
+B3	VREFB3N0	IO	LVDS43n				G12				DQ0R5	DQ1R5
+B3	VREFB3N0	IO	LVDS43p				G13				DQ0R4	DQ1R4
+B3	VREFB3N0	IO	LVDS42n			143	E13		DQ0R3	DQ1R3	DQ0R3	DQ1R3
+B3	VREFB3N0	IO	LVDS42p			144	F13		DQ0R2	DQ1R2	DQ0R2	DQ1R2
+B3	VREFB3N0	IO	VREFB3N0		99	145	H13					
+B3	VREFB3N0	VCCIO3										
+B3	VREFB3N0	IO	LVDS41n				D15					
+B3	VREFB3N0	IO	LVDS41p				D16					
+B3	VREFB3N0	IO	LVDS40n				E15				DQ0R1	DQ1R1
+B3	VREFB3N0	GND										
+B3	VREFB3N0	IO	LVDS40p				E16				DQ0R0	DQ1R0
+B3	VREFB3N0	IO					F14					
+B3	VREFB3N0	IO	LVDS39n		100	146	C15	DQ1R2	DQ0R1	DQ1R1		
+B3	VREFB3N0	IO	LVDS39p		101	147	C16	DQ1R1	DQ0R0	DQ1R0		
+B3	VREFB3N0	VCCIO3			102	148						
+B3	VREFB3N0	IO	LVDS38n			149	C14					
+B3	VREFB3N0	IO	LVDS38p			150	D13					
+B3	VREFB3N0	IO	PLL2_OUTp		103	151	E14	DQ1R0				
+B3	VREFB3N0	IO	PLL2_OUTn		104	152	D14					
+B3	VREFB3N0	GND			105	153						
+B3	VREFB3N0	GND_PLL2			106	154	F12					
+B3	VREFB3N0	VCCD_PLL2			107	155	F11					
+B3	VREFB3N0	GND_PLL2			108	156	D12					
+B2	VREFB2N0	VCCA_PLL2			109	157	E12					
+B2	VREFB2N0	GNDA_PLL2			110	158	E11					
+B2	VREFB2N0	GND			111	159						
+B2	VREFB2N0	IO	LVDS37n		112	160	B14					
+B2	VREFB2N0	IO	LVDS37p		113	161	A14		DQ0T0	DQ1T0	DQ0T0	DQ1T0
+B2	VREFB2N0	IO	LVDS36n		114	162	C13		DQ0T1	DQ1T1	DQ0T1	DQ1T1
+B2	VREFB2N0	IO	LVDS36p		115	163	C12		DQ0T2	DQ1T2	DQ0T2	DQ1T2
+B2	VREFB2N0	IO	LVDS35n			164	B13		DQ0T3	DQ1T3	DQ0T3	DQ1T3
+B2	VREFB2N0	IO	LVDS35p			165	A13		DQ0T4	DQ1T4	DQ0T4	DQ1T4
+B2	VREFB2N0	VCCIO2			116	166						
+B2	VREFB2N0	GND			117	167						
+B2	VREFB2N0	IO	LVDS34n		118	168	B12				DQ0T5	DQ1T5
+B2	VREFB2N0	IO	LVDS34p		119	169	A12	DPCLK8/DQS0T	DPCLK8/DQS0T	DPCLK8/DQS0T	DPCLK8/DQS0T	DPCLK8/DQS0T
+B2	VREFB2N0	IO	VREFB2N0		120	170	C11					
+B2	VREFB2N0	IO	LVDS33n		121	171	B11		DQ0T5	DQ1T5	DQ0T6	DQ1T6
+B2	VREFB2N0	VCCIO2				172						
+B2	VREFB2N0	IO	LVDS33p		122	173	A11		DQ0T6	DQ1T6	DQ0T7	DQ1T7
+B2	VREFB2N0	GND				174						
+B2	VREFB2N0	IO	LVDS32n				G10					
+B2	VREFB2N0	IO	LVDS32p				G11					
+B2	VREFB2N0	IO	LVDS31n			175	B10		DQ0T7	DQ1T7		DQ1T8
+B2	VREFB2N0	VCCIO2										
+B2	VREFB2N0	IO	LVDS31p			176	A10			DQ1T8		
+B2	VREFB2N0	GND										
+B2	VREFB2N0	IO	LVDS30n				F10					
+B2	VREFB2N0	IO	LVDS30p				F9					
+B2	VREFB2N0	IO					D9					
+B2	VREFB2N0	GND			123	177						
+B2	VREFB2N0	VCCINT			124	178						
+B2	VREFB2N0	IO	LVDS29n		125	179	D11	DQ1T0	DM0T	DM1T0/BWS#1T0	DM0T	DM1T0/BWS#1T0
+B2	VREFB2N0	VCCIO2										
+B2	VREFB2N0	IO	LVDS29p		126	180	D10	DQ1T1				
+B2	VREFB2N0	GND										
+B2	VREFB2N0	IO	LVDS28n			181	A9					
+B2	VREFB2N0	IO	LVDS28p			182	B9					
+B2	VREFB2N1	IO	LVDS27n				A8					
+B2	VREFB2N1	IO	LVDS27p				B8					
+B2	VREFB2N1	VCCIO2			127	183						
+B2	VREFB2N1	IO	LVDS26n				A7				DQ1T0	DQ1T9
+B2	VREFB2N1	GND			128	184						
+B2	VREFB2N1	IO	LVDS26p		129	185	B7	DQ1T2	DQ1T0	DQ1T9		
+B2	VREFB2N1	GND			130	186						
+B2	VREFB2N1	IO	LVDS25n			187	F7					
+B2	VREFB2N1	IO	LVDS25p			188	F8		DQ1T1	DQ1T10		
+B2	VREFB2N1	IO	LVDS24n			189			DQ1T2	DQ1T11		
+B2	VREFB2N1	VCCINT			131	190						
+B2	VREFB2N1	IO	LVDS24p			191			DQ1T3	DQ1T12		
+B2	VREFB2N1	IO	VREFB2N1		132	192	D8					
+B2	VREFB2N1	IO	LVDS23n		133	193	B6	DQ1T3	DQ1T4	DQ1T13	DQ1T1	DQ1T10
+B2	VREFB2N1	VCCIO2				194						
+B2	VREFB2N1	IO	LVDS23p		134	195	A6	DQ1T4	DQ1T5	DQ1T14		
+B2	VREFB2N1	GND				196						
+B2	VREFB2N1	IO	LVDS22n				G6					
+B2	VREFB2N1	IO	LVDS22p				G7					
+B2	VREFB2N1	IO					D7				DQ1T2	DQ1T11
+B2	VREFB2N1	IO	LVDS21n			197	D6				DQ1T3	DQ1T12
+B2	VREFB2N1	VCCIO2										
+B2	VREFB2N1	IO	LVDS21p			198	C6				DQ1T4	DQ1T13
+B2	VREFB2N1	GND										
+B2	VREFB2N1	IO	LVDS20n				C5					
+B2	VREFB2N1	IO	LVDS20p				C4				DQ1T5	DQ1T14
+B2	VREFB2N1	IO	LVDS19n		135	199	B5	DQ1T5			DQ1T6	DQ1T15
+B2	VREFB2N1	IO	LVDS19p		136	200	A5	DPCLK10/DQS1T	DPCLK10/DQS1T	DPCLK10/DQS1T	DPCLK10/DQS1T	DPCLK10/DQS1T
+B2	VREFB2N1	IO	LVDS18n		137	201	B4	DQ1T6	DQ1T6	DQ1T15	DQ1T7	DQ1T16
+B2	VREFB2N1	VCCIO2			138	202						
+B2	VREFB2N1	IO	LVDS18p		139	203	A4	DQ1T7	DQ1T7	DQ1T16	DQ1T8	DQ1T17
+B2	VREFB2N1	GND			140	204						
+B2	VREFB2N1	IO	LVDS17p		141	205	A3	DQ1T8	DQ1T8	DQ1T17	DM1T/BWS#1T	DM1T1/BWS#1T1
+B2	VREFB2N1	IO	LVDS17n	DEV_CLRn	142	206	B3					
+B2	VREFB2N1	IO	LVDS16p		143	207	E6	DM1T/BWS#1T	DM1T/BWS#1T	DM1T1/BWS#1T1		
+B2	VREFB2N1	IO	LVDS16n		144	208	F6					
+		VCCINT					G9					
+		VCCINT					H7					
+		VCCINT					H10					
+		VCCINT					J7					
+		VCCINT					J10					
+		VCCINT					K8					
+		VCCIO1					B1					
+		VCCIO1					G3					
+		VCCIO1					K3					
+		VCCIO1					R1					
+		VCCIO4					M7					
+		VCCIO4					M10					
+		VCCIO4					P7					
+		VCCIO4					P10					
+		VCCIO4					T2					
+		VCCIO4					T15					
+		VCCIO3					B16					
+		VCCIO3					G14					
+		VCCIO3					K14					
+		VCCIO3					R16					
+		VCCIO2					A2					
+		VCCIO2					A15					
+		VCCIO2					C7					
+		VCCIO2					C10					
+		VCCIO2					E7					
+		VCCIO2					E10					
+		GND					G8					
+		GND					H8					
+		GND					H9					
+		GND					J8					
+		GND					J9					
+		GND					K9					
+		GND					A1					
+		GND					A16					
+		GND					B2					
+		GND					B15					
+		GND					C8					
+		GND					C9					
+		GND					E8					
+		GND					E9					
+		GND					H3					
+		GND					H14					
+		GND					J3					
+		GND					J14					
+		GND					M8					
+		GND					M9					
+		GND					P8					
+		GND					P9					
+		GND					R2					
+		GND					R15					
+		GND					T1					
+		GND					T16					
+												
+Notes:												
+"(1) The optional functions (e.g. LVDS, DDR) are not available for some pins in certain packages."												
+"      For example, for the EP2C8 device, the LVDS70 pair is available for the Q208 and F256 packages, but not for the T144 package. "												
+"(2) The DQS0T, DQS1T, DQS0B, and DQS1B pin functions are only available in the F672 and F896 packages."												
+"(3) If the dedicated CLK pins are not used to feed the global clock networks, they can be used as general-purpose input pins to feed the core logic."												
+      The dedicated CLK pins do not support the I/O register.												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												

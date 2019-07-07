@@ -1,9 +1,8 @@
 ## DATA RELATED FILES
 # data/
-*.csv
-*.db
+#*.csv
 *.tmp
-*.txt
+#*.txt
 
 __pycache__/
 

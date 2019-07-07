@@ -4,7 +4,23 @@ I was doing some hardware designs with FPGAs the other day at work, and on the f
 
 This repo is probably going to be 90% code dedicated to data cleanup, and 10% ~~machine learning~~ plotting.
 
+![VCC Pins and GND Pins](/img/vcc_vs_gnd.png)
+
 ## Getting Started
+
+This requires Python 3.6+. Install all required libraries with:
+
+```
+pip install -r requirements.txt
+```
+
+If you wish to re-generate the database, you can do that with:
+
+```
+python -m db.build_db
+```
+
+Otherwise, just play around with `plot.py`. See `./plot.py --help` for more info.
 
 ## Data
 
@@ -40,12 +56,41 @@ All of the pin out data comes from downloading (a huge number) of files from the
 * [Intel Altera Pin-Outs](https://www.intel.com/content/www/us/en/programmable/support/literature/lit-dp.html)
 * [Xilinx Package Files Portal](https://www.xilinx.com/support/package-pinout-files.html)
 
-I've shortened "Intel Altera" to simply "Altera" everywhere else, for simplicity.
+I've shortened "Intel Altera" to simply "Altera" everywhere else, for simplicity. See **Licenses** below on using them.
+
+### Images
+
+All the images I thought were neat are tracked in the repo under the `img/` folder.
+
+## Status
+
+Repo is in a usable but not necessarily complete state. Some quick notes for myself on what to work on next:
+
+- [x] Xilinx parsing
+- [x] Cyclone parsing
+- [ ] Finish Altera parsing
+- [ ] Add some tests
+- [ ] Clean up/refactor parsers
+- [ ] Make more plots using other factors (`manufacturer`, `family`?)
 
 ## License
 
-There's no `LICENSE` file here - the data is not mine, but I've included the relevant licenses when made available. For anything code I write, that's always going to be [WTFPL](http://www.wtfpl.net/about/). For the images that get produced, I'll probably do some Wikipedia style CC BY-SA. Will update this when I get to that stage!
+The whole `data/` folder belongs to the original manufacturer(s). Most files contain the legal information associated with that file (e.g. [`data/xilinx/ultrascale_qualified/xqku5pffrb676pkg.csv`](data/xilinx/ultrascale_qualified/xqku5pffrb676pkg.csv)).
 
-## Citations
+All code is MIT licensed. See [`LICENSE.txt`](LICENSE.txt).
 
-TODO... if ever :shrug:
+All images are licensed under the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/). See [`img/CC-BY-SA-40.txt`](img/CC-BY-SA-40.txt).
+
+### Citations
+
+If you use this data elsewhere, I would love to know! You can cite the repo as:
+
+```
+@Misc{,
+  author =    {Braedon Salz},
+  title =     {FPGA Pin Trends},
+  year =      {2018--},
+  url = "https://github.com/bradysalz/fpga-pin-trends/",
+  note = {[Online; accessed <today>]}
+}
+```

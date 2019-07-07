@@ -1,0 +1,655 @@
+"Pin Information for the Cyclone IV GX EP4CGX22 Device 
+Version 1.0 
+Note (1)"										
+										
+										
+Bank Number	VREFB Group	Pin Name / Function	Optional Function(s)	Configuration Function	F324	F169	DQS for X8/X9 in F324	DQS for X16/X18 in F324	DQS for X8/X9 in F169	
+QL0	  	  GXB_TX3p	   	  	  B2	   	   	   	   	
+QL0	  	  GXB_TX3n	   	  	  B1	   	   	   	   	
+QL0	  	  GXB_RX3p	   	  	  D2	   	   	   	   	
+QL0	  	  GXB_RX3n	   	  	  D1	   	   	   	   	
+QL0	  	  GXB_TX2p	   	  	  F2	   	   	   	   	
+QL0	  	  GXB_TX2n	   	  	  F1	   	   	   	   	
+QL0	  	  GXB_RX2p	   	  	  H2	   	   	   	   	
+QL0	  	  GXB_RX2n	   	  	  H1	   	   	   	   	
+QL0	  	  GXB_TX1p	   	  	  K2	  C2	   	   	   	
+QL0	  	  GXB_TX1n	   	  	  K1	  C1	   	   	   	
+QL0	  	  GXB_RX1p	   	  	  M2	  E2	   	   	   	
+QL0	  	  GXB_RX1n	   	  	  M1	  E1	   	   	   	
+QL0	  	  GXB_TX0p	   	  	  P2	  G2	   	   	   
+QL0	  	  GXB_TX0n	   	  	  P1	  G1	   	   	   
+QL0	  	  GXB_RX0p	   	  	  T2	  J2	   	   	   
+QL0	  	  GXB_RX0n	   	  	  T1	  J1	   	   	   
+B3	  	  MSEL2	   	  MSEL2	  P4	  L3	   	   	   
+B3	  	  MSEL1	   	  MSEL1	  R5	  N3	   	   	   
+B3	  	  MSEL0	   	  MSEL0	  T5	  K5	   	   	   
+B3	  	  CONF_DONE	   	  CONF_DONE	  U4	  J5	   	   	   
+B3	  	  nSTATUS	   	  nSTATUS	  V4	  K6	   	   	   
+B3	  VREFB3N0	  IO	  PLL1_CLKOUTp	   	  N5	  L4	   	   	   
+B3	  VREFB3N0	  IO	  PLL1_CLKOUTn	   	  N6	  M4	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B1p	   CRC_ERROR	  P6	  N4	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B1n	   NCEO	  R6	  N5	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B2p	   	  T6	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B2n	   	  U6	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B3p	   INIT_DONE	  V5	  M6	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B3n	   	  V6	  N6	  DQ1B	  DQ0B	  DQ0B
+B3	  VREFB3N0	  IO	  DIFFIO_B4p	   	  R7	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B4n	   	  T7	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B5p	   	  M7	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B5n	   	  N7	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B6p	   	  U7	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B6n	   	  V7	   	   	   	   
+B3	  VREFB3N0	  IO	   	   	  T8	  L5	"  DQS1B/CQ0B#, DPCLK2"	"  DQS1B/CQ0B#, DPCLK2"	"  DQS1B/CQ0B#, DPCLK2"
+B3	  VREFB3N0	  IO	  VREFB3N0	   	  R8	  L7	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B7p	   	  U9	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B7n	   	  V8	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B8p	   	  R9	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B8n	   	  T9	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B9p	   	  V9	   	"  DQS3B/CQ1B#, DPCLK3"	"  DQS3B/CQ1B#, DPCLK3"	   
+B3	  VREFB3N0	  IO	  DIFFIO_B9n	   	  V10	   	   	   	   
+B3	  VREFB3N0	  IO	  DIFFIO_B10p	   	  T10	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B10n	   	  U10	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B11p	   	  P10	   	  DQ1B	  DQ0B	   
+B3	  VREFB3N0	  IO	  DIFFIO_B11n	   	  R10	   	  DM1B/BWS#1B	  DM0B/BWS#0B	   
+B3A	  VREFB3N0	  CLK12	"  DIFFCLK_7p,REFCLK0p"	   	  M9	  J6	   	   	   
+B3A	  VREFB3N0	  CLK13	"  DIFFCLK_7n,REFCLK0n"	   	  M10	  J7	   	   	   
+B4	  VREFB4N0	  CLK14	  DIFFCLK_6p	   	  V11	  M7	   	   	   
+B4	  VREFB4N0	  CLk15	  DIFFCLK_6n	   	  V12	  N7	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B12p	   	  U13	  N8	   	   	  DQ0B
+B4	  VREFB4N0	  IO	  DIFFIO_B12n	   	  V13	  N9	  DQ0B	  DQ0B	  DQ0B
+B4	  VREFB4N0	  IO	  DIFFIO_B13p	   	  R11	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B13n	   	  T11	   	  DQ0B	  DQ0B	   
+B4	  VREFB4N0	  IO	  DIFFIO_B14p	   	  T12	   	  DQ0B	  DQ0B	   
+B4	  VREFB4N0	  IO	  DIFFIO_B14n	   	  U12	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B15p	   	  V14	   	  DQ0B	  DQ0B	   
+B4	  VREFB4N0	  IO	  DIFFIO_B15n	   	  V15	   	  DQ0B	  DQ0B	   
+B4	  VREFB4N0	  IO	  DIFFIO_B16p	   	  R12	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B16n	   	  R13	   	"  DQS2B/CQ1B, DPCLK4"	"  DQS2B/CQ1B, DPCLK4"	   
+B4	  VREFB4N0	  IO	  VREFB4N0	   	  P12	  K8	   	   	   
+B4	  VREFB4N0	  IO	   	   	  P13	  K9	   	   	  DQ0B
+B4	  VREFB4N0	  IO	  DIFFIO_B17p	   	  T13	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B17n	   	  T14	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B18p	   	  U15	   	  DQ0B	  DQ0B	   
+B4	  VREFB4N0	  IO	  DIFFIO_B18n	   	  U16	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B19p	   	  V16	  L9	  DQ0B	  DQ0B	  DQ0B
+B4	  VREFB4N0	  IO	  DIFFIO_B19n	   	  V17	  M9	"  DQS0B/CQ0B, DPCLK5"	"  DQS0B/CQ0B, DPCLK5"	"  DQS0B/CQ0B, DPCLK5"
+B4	  VREFB4N0	  IO	  DIFFIO_B20p	   	  U18	   	  DQ0B	  DQ0B	   
+B4	  VREFB4N0	  IO	  DIFFIO_B20n	   	  V18	   	   	   	   
+B4	  VREFB4N0	  IO	  DIFFIO_B21p	   	  T16	  N10	  DQ0B	  DQ0B	  DQ0B
+B4	  VREFB4N0	  IO	  DIFFIO_B21n	   	  T17	  N11	  DM0B/BWS#0B	  DM0B/BWS#0B	  DQ0B
+B4	  VREFB4N0	  IO	  RUP2	   	  R14	  M11	   	   	  DQ0B
+B4	  VREFB4N0	  IO	  RDN2	   	  T15	  N12	   	   	  DM0B
+B4	  VREFB4N0	  IO	  PLL3_CLKOUTp	   	  P15	  K10	   	   	   
+B4	  VREFB4N0	  IO	  PLL3_CLKOUTn	   	  R15	  L11	   	   	   
+B5	  VREFB5N0	  IO	  RUP3	   	  N15	  N13	   	   	   
+B5	  VREFB5N0	  IO	  RDN3	   	  N16	  M13	   	   	   
+B5	  VREFB5N0	  IO	  DIFFIO_R14n	   	  P16	  K12	  DQ1R	  DQ0R	  DQ0R
+B5	  VREFB5N0	  IO	  DIFFIO_R14p	   	  R16	  K11	   	   	  DQ0R
+B5	  VREFB5N0	  IO	  DIFFIO_R13n	   	  T18	  L13	  DQ1R	  DQ0R	  DQ0R
+B5	  VREFB5N0	  IO	  DIFFIO_R13p	   	  R17	  L12	  DQ1R	  DQ0R	  DQ0R
+B5	  VREFB5N0	  IO	  DIFFIO_R12n	   	  P18	   	  DQ1R	  DQ0R	   
+B5	  VREFB5N0	  IO	  DIFFIO_R12p	   	  R18	   	"  DQS3R/CQ1R#, DPCLK6"	"  DQS3R/CQ1R#, DPCLK6"	   
+B5	  VREFB5N0	  IO	  VREFB5N0	   	  L16	  H12	   	   	   
+B5	  VREFB5N0	  IO	   	   	  L15	  H10	"  DQS1R/CQ0R#, DPCLK7"	"  DQS1R/CQ0R#, DPCLK7"	"  DQS1R/CQ0R#, DPCLK7"
+B5	  VREFB5N0	  IO	  DIFFIO_R11n	   	  M17	   	   	   	   
+B5	  VREFB5N0	  IO	  DIFFIO_R11p	   	  M16	   	   	   	   
+B5	  VREFB5N0	  IO	  DIFFIO_R10n	   	  N18	   	  DQ1R	  DQ0R	   
+B5	  VREFB5N0	  IO	  DIFFIO_R10p	   	  N17	   	  DQ1R	  DQ0R	   
+B5	  VREFB5N0	  IO	  DIFFIO_R9n	   	  K16	  J13	  DQ1R	  DQ0R	  DQ0R
+B5	  VREFB5N0	  IO	  DIFFIO_R9p	   	  K15	  K13	  DQ1R	  DQ0R	  DQ0R
+B5	  VREFB5N0	  IO	  DIFFIO_R8n	   	  L18	   	  DQ1R	  DQ0R	   
+B5	  VREFB5N0	  IO	  DIFFIO_R8p	   	  M18	   	  DM1R/BWS#1R	  DM0R/BWS#0R	   
+B5	  VREFB5N0	  CLK4	  DIFFCLK_2n	   	  K18	  G13	   	   	   
+B5	  VREFB5N0	  CLK5	  DIFFCLK_2p	   	  K17	  H13	   	   	   
+B6	  VREFB6N0	  CLk6	  DIFFCLK_3n	   	  H18	  F13	   	   	   
+B6	  VREFB6N0	  CLK7	  DIFFCLK_3p	   	  J18	  F12	   	   	   
+B6	  VREFB6N0	  IO	  DIFFIO_R7n	   	  J17	   	  DQ0R	  DQ0R	   
+B6	  VREFB6N0	  IO	  DIFFIO_R7p	   	  J16	   	  DQ0R	  DQ0R	   
+B6	  VREFB6N0	  IO	  DIFFIO_R6n	   DEV_OE	  G18	  G10	   	   	   
+B6	  VREFB6N0	  IO	  DIFFIO_R6p	   	  F17	  G9	"  DQS0R/CQ0R, DPCLK8"	"  DQS0R/CQ0R, DPCLK8"	"  DQS0R/CQ0R, DPCLK8"
+B6	  VREFB6N0	  IO	  DIFFIO_R5n	   	  G17	  F11	  DQ0R	  DQ0R	  DQ0R
+B6	  VREFB6N0	  IO	  DIFFIO_R5p	   	  G16	  F10	  DQ0R	  DQ0R	  DQ0R
+B6	  VREFB6N0	  IO	  VREFB6N0	   	  G15	  E13	   	   	   
+B6	  VREFB6N0	  IO	   	   	  H16	  F9	   	   	   
+B6	  VREFB6N0	  IO	  DIFFIO_R4n	   DEV_CLRn	  E18	  D10	   	   	   
+B6	  VREFB6N0	  IO	  DIFFIO_R4p	   	  F18	  E10	  DQ0R	  DQ0R	  DM0R
+B6	  VREFB6N0	  IO	  DIFFIO_R3n	   	  D18	   	"  DQS2R/CQ1R, DPCLK9"	"  DQS2R/CQ1R, DPCLK9"	   
+B6	  VREFB6N0	  IO	  DIFFIO_R3p	   	  D17	   	  DQ0R	  DQ0R	   
+B6	  VREFB6N0	  IO	  DIFFIO_R2n	   	  E16	  D12	  DQ0R	  DQ0R	   
+B6	  VREFB6N0	  IO	  DIFFIO_R2p	   	  F16	  D11	  DQ0R	  DQ0R	   
+B6	  VREFB6N0	  IO	  DIFFIO_R1n	   	  E15	   	  DQ0R	  DQ0R	   
+B6	  VREFB6N0	  IO	  DIFFIO_R1p	   	  F15	   	  DM0R/BWS#0R	  DM0R/BWS#0R	   
+B7	  VREFB7N0	  IO	  RUP4	   	  C18	  C11	   	   	  DQ0T
+B7	  VREFB7N0	  IO	  RDN4	   	  B18	  C12	   	   	  DQ0T
+B7	  VREFB7N0	  IO	  PLL4_CLKOUTn	   	  C16	   	   	   	   
+B7	  VREFB7N0	  IO	  PLL4_CLKOUTp	   	  C17	   	   	   	   
+B7	  VREFB7N0	  IO	  DIFFIO_T19n	   	  D15	   	  DQ0T	  DQ0T	   
+B7	  VREFB7N0	  IO	  DIFFIO_T19p	   	  D16	   	  DQ0T	  DQ0T	   
+B7	  VREFB7N0	  IO	  DIFFIO_T18n	   	  A17	  C13	  DQ0T	  DQ0T	  DQ0T
+B7	  VREFB7N0	  IO	  DIFFIO_T18p	   	  A18	  D13	   	   	  DQ0T
+B7	  VREFB7N0	  IO	  DIFFIO_T17n	   	  C14	  A13	"  DQS0T/CQ0T, DPCLK10"	"  DQS0T/CQ0T, DPCLK10"	"  DQS0T/CQ0T, DPCLK10"
+B7	  VREFB7N0	  IO	  DIFFIO_T17p	   	  D14	  B13	   	   	  DQ0T
+B7	  VREFB7N0	  IO	  DIFFIO_T16n	   	  B15	   	  DQ0T	  DQ0T	   
+B7	  VREFB7N0	  IO	  DIFFIO_T16p	   	  C15	   	  DQ0T	  DQ0T	   
+B7	  VREFB7N0	  IO	   	   	  D13	  B11	   	   	   
+B7	  VREFB7N0	  IO	  VREFB7N0	   	  E12	  B10	   	   	   
+B7	  VREFB7N0	  IO	  DIFFIO_T15n	   	  A16	   	   	   	   
+B7	  VREFB7N0	  IO	  DIFFIO_T15p	   	  B16	   	   	   	   
+B7	  VREFB7N0	  IO	  DIFFIO_T14n	   	  C12	   	  DQ0T	  DQ0T	   
+B7	  VREFB7N0	  IO	  DIFFIO_T14p	   	  C13	   	   	   	   
+B7	  VREFB7N0	  IO	  DIFFIO_T13n	   	  A14	   	"  DQS2T/CQ1T, DPCLK11"	"  DQS2T/CQ1T, DPCLK11"	   
+B7	  VREFB7N0	  IO	  DIFFIO_T13p	   	  A15	   	   	   	   
+B7	  VREFB7N0	  IO	  DIFFIO_T12n	   	  D11	  B8	  DQ0T	  DQ0T	  DQ0T
+B7	  VREFB7N0	  IO	  DIFFIO_T12p	   	  D12	  C8	   	   	  DQ0T
+B7	  VREFB7N0	  IO	  DIFFIO_T11n	   	  A13	  A11	  DQ0T	  DQ0T	  DQ0T
+B7	  VREFB7N0	  IO	  DIFFIO_T11p	   	  B13	  A12	   	   	  DM0T
+B7	  VREFB7N0	  IO	  DIFFIO_T10n	   	  D10	   	  DQ0T	  DQ0T	   
+B7	  VREFB7N0	  IO	  DIFFIO_T10p	   	  E10	   	  DM0T/BWS#0T	  DM0T/BWS#0T	   
+B7	  VREFB7N0	  CLK8	  DIFFCLK_5n	   	  A12	  A9	   	   	   
+B7	  VREFB7N0	  CLK9	  DIFFCLK_5p	   	  B12	  A10	   	   	   
+B8A	  VREFB8N0	  CLK10	"  DIFFCLK_4n,REFCLK1n"	   	  G9	  E6	   	   	   
+B8A	  VREFB8N0	  CLK11	"  DIFFCLK_4p,REFCLK1p"	   	  G10	  E7	   	   	   
+B8	  VREFB8N0	  IO	  DIFFIO_T9n	   	  C10	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T9p	   	  C11	   	   	   	   
+B8	  VREFB8N0	  IO	  DIFFIO_T8n	   	  A10	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T8p	   	  A11	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T7n	   	  B9	   	   	   	   
+B8	  VREFB8N0	  IO	  DIFFIO_T7p	   	  B10	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T6n	   	  C9	   	   	   	   
+B8	  VREFB8N0	  IO	  DIFFIO_T6p	   	  D9	   	"  DQS3T/CQ1T#, DPCLK12"	"  DQS3T/CQ1T#, DPCLK12"	   
+B8	  VREFB8N0	  IO	  DIFFIO_T5n	   	  A8	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T5p	   	  A9	   	   	   	   
+B8	  VREFB8N0	  IO	  VREFB8N0	   	  D8	  C6	   	   	   
+B8	  VREFB8N0	  IO	   	   	  C8	  B6	"  DQS1T/CQ0T#, DPCLK13"	"  DQS1T/CQ0T#, DPCLK13"	"  DQS1T/CQ0T#, DPCLK13"
+B8	  VREFB8N0	  IO	  DIFFIO_T4n	   	  A7	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T4p	   	  B7	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T3n	   	  C7	   	   	   	   
+B8	  VREFB8N0	  IO	  DIFFIO_T3p	   	  D7	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T2n	   	  A6	   	  DQ1T	  DQ0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T2p	   	  B6	   	  DM1T/BWS#1T	  DM0T/BWS#0T	   
+B8	  VREFB8N0	  IO	  DIFFIO_T1n	   	  C6	   	   	   	   
+B8	  VREFB8N0	  IO	  DIFFIO_T1p	   	  D6	   	   	   	   
+B8	  VREFB8N0	  IO	  PLL2_CLKOUTn	   	  A5	  A7	   	   	   
+B8	  VREFB8N0	  IO	  PLL2_CLKOUTp	   	  B5	  A8	   	   	   
+B8	  VREFB8N0	  IO	   	  CLKUSR	  E6	  A6	   	   	   
+B9	  VREFB8N0	  IO	   	  DATA0	  A4	  A5	   	   	   
+B9	  VREFB8N0	  IO	   	  ASDO	  B4	  B5	   	   	   
+B9	  VREFB8N0	  IO	   	  NCSO	  C5	  C5	   	   	   
+B9	  	  DCLK	   	  DCLK	  D5	  A4	   	   	   
+B9	  	  nCONFIG	   	  nCONFIG	  C4	  D5	   	   	   
+B9	  	  nCE	   	  nCE	  D3	  C4	   	   	   
+B9	  	  TDI	   	  TDI	  D4	  A3	   	   	   
+B9	  	  TCK	   	  TCK	  E5	  B3	   	   	   
+B9	  	  TMS	   	  TMS	  E3	  A2	   	   	   
+B9	  	  TDO	   	  TDO	  E4	  A1	   	   	   
+ 	   	  GND	   	   	  F5	  E3	   	   	   
+ 	   	  GND	   	   	  M6	  K3	   	   	   
+ 	   	  GND	   	   	  M13	  J9	   	   	   
+ 	   	  GND	   	   	  F13	  B12	   	   	   
+ 	   	  GND	   	   	  G11	  M12	   	   	   
+ 	   	  GND	   	   	  U17	  M10	   	   	   
+ 	   	  GND	   	   	  U14	  M8	   	   	   
+ 	   	  GND	   	   	  U11	  M5	   	   	   
+ 	   	  GND	   	   	  U8	  J12	   	   	   
+ 	   	  GND	   	   	  U5	  H8	   	   	   
+ 	   	  GND	   	   	  P17	  H6	   	   	   
+ 	   	  GND	   	   	  P14	  H4	   	   	   
+ 	   	  GND	   	   	  P11	  G12	   	   	   
+ 	   	  GND	   	   	  P8	  G7	   	   	   
+ 	   	  GND	   	   	  P5	  G5	   	   	   
+ 	   	  GND	   	   	  N10	  F8	   	   	   
+ 	   	  GND	   	   	  M12	  F6	   	   	   
+ 	   	  GND	   	   	  M8	  F4	   	   	   
+ 	   	  GND	   	   	  M4	  E12	   	   	   
+ 	   	  GND	   	   	  L17	  E9	   	   	   
+ 	   	  GND	   	   	  L14	  E5	   	   	   
+ 	   	  GND	   	   	  L11	  D8	   	   	   
+ 	   	  GND	   	   	  L9	  D6	   	   	   
+ 	   	  GND	   	   	  L7	  B9	   	   	   
+ 	   	  GND	   	   	  L5	  B7	   	   	   
+ 	   	  GND	   	   	  K12	  B4	   	   	   
+ 	   	  GND	   	   	  K10	  M1	   	   	   
+ 	   	  GND	   	   	  K8	  L2	   	   	   
+ 	   	  GND	   	   	  K6	  K2	   	   	   
+ 	   	  GND	   	   	  K4	  K1	   	   	   
+ 	   	  GND	   	   	  J13	  H2	   	   	   
+ 	   	  GND	   	   	  J11	  H1	   	   	   
+ 	   	  GND	   	   	  J9	  F2	   	   	   
+ 	   	  GND	   	   	  J7	  F1	   	   	   
+ 	   	  GND	   	   	  J5	  D2	   	   	   
+ 	   	  GND	   	   	  H17	  D1	   	   	   
+ 	   	  GND	   	   	  H14	  B2	   	   	   
+ 	   	  GND	   	   	  H12	  B1	   	   	   
+ 	   	  GND	   	   	  H10	   	   	   	   
+ 	   	  GND	   	   	  H8	   	   	   	   
+ 	   	  GND	   	   	  H6	   	   	   	   
+ 	   	  GND	   	   	  H4	   	   	   	   
+ 	   	  GND	   	   	  G7	   	   	   	   
+ 	   	  GND	   	   	  E17	   	   	   	   
+ 	   	  GND	   	   	  E14	   	   	   	   
+ 	   	  GND	   	   	  E11	   	   	   	   
+ 	   	  GND	   	   	  E8	   	   	   	   
+ 	   	  GND	   	   	  B17	   	   	   	   
+ 	   	  GND	   	   	  B14	   	   	   	   
+ 	   	  GND	   	   	  B11	   	   	   	   
+ 	   	  GND	   	   	  B8	   	   	   	   
+ 	   	  GND	   	   	  V2	   	   	   	   
+ 	   	  GND	   	   	  U2	   	   	   	   
+ 	   	  GND	   	   	  U1	   	   	   	   
+ 	   	  GND	   	   	  T3	   	   	   	   
+ 	   	  GND	   	   	  R3	   	   	   	   
+ 	   	  GND	   	   	  R2	   	   	   	   
+ 	   	  GND	   	   	  R1	   	   	   	   
+ 	   	  GND	   	   	  P3	   	   	   	   
+ 	   	  GND	   	   	  N2	   	   	   	   
+ 	   	  GND	   	   	  N1	   	   	   	   
+ 	   	  GND	   	   	  L2	   	   	   	   
+ 	   	  GND	   	   	  L1	   	   	   	   
+ 	   	  GND	   	   	  J2	   	   	   	   
+ 	   	  GND	   	   	  J1	   	   	   	   
+ 	   	  GND	   	   	  G2	   	   	   	   
+ 	   	  GND	   	   	  G1	   	   	   	   
+ 	   	  GND	   	   	  E2	   	   	   	   
+ 	   	  GND	   	   	  E1	   	   	   	   
+ 	   	  GND	   	   	  C3	   	   	   	   
+ 	   	  GND	   	   	  C2	   	   	   	   
+ 	   	  GND	   	   	  C1	   	   	   	   
+ 	   	  GND	   	   	  B3	   	   	   	   
+ 	   	  GND	   	   	  A3	   	   	   	   
+ 	   	  GND	   	   	  A2	   	   	   	   
+ 	   	  GND	   	   	  A1	   	   	   	   
+ 	   	  VCCINT	   	   	  G6	  F7	   	   	   
+ 	   	  VCCINT	   	   	  N4	  J8	   	   	   
+ 	   	  VCCINT	   	   	  M11	  H7	   	   	   
+ 	   	  VCCINT	   	   	  L12	  H5	   	   	   
+ 	   	  VCCINT	   	   	  L10	  G8	   	   	   
+ 	   	  VCCINT	   	   	  L8	  G6	   	   	   
+ 	   	  VCCINT	   	   	  L4	  G4	   	   	   
+ 	   	  VCCINT	   	   	  K13	  F5	   	   	   
+ 	   	  VCCINT	   	   	  K11	  E8	   	   	   
+ 	   	  VCCINT	   	   	  K9	  E4	   	   	   
+ 	   	  VCCINT	   	   	  K7	   	   	   	   
+ 	   	  VCCINT	   	   	  K5	   	   	   	   
+ 	   	  VCCINT	   	   	  J14	   	   	   	   
+ 	   	  VCCINT	   	   	  J12	   	   	   	   
+ 	   	  VCCINT	   	   	  J10	   	   	   	   
+ 	   	  VCCINT	   	   	  J8	   	   	   	   
+ 	   	  VCCINT	   	   	  J6	   	   	   	   
+ 	   	  VCCINT	   	   	  J4	   	   	   	   
+ 	   	  VCCINT	   	   	  H13	   	   	   	   
+ 	   	  VCCINT	   	   	  H11	   	   	   	   
+ 	   	  VCCINT	   	   	  H9	   	   	   	   
+ 	   	  VCCINT	   	   	  H7	   	   	   	   
+ 	   	  VCCINT	   	   	  H5	   	   	   	   
+ 	   	  VCCINT	   	   	  G12	   	   	   	   
+ 	   	  VCCINT	   	   	  G8	   	   	   	   
+ 	   	  VCCINT	   	   	  G4	   	   	   	   
+ 	   	  VCCINT	   	   	  F7	   	   	   	   
+ 	   	  VCCIO3	   	   	  N8	  L6	   	   	   
+ 	   	  VCCIO3	   	   	  P9	   	   	   	   
+ 	   	  VCCIO3	   	   	  P7	   	   	   	   
+ 	   	  VCCIO4	   	   	  N12	  L8	   	   	   
+ 	   	  VCCIO4	   	   	  N14	  L10	   	   	   
+ 	   	  VCCIO4	   	   	  N13	   	   	   	   
+ 	   	  VCCIO4	   	   	  N11	   	   	   	   
+ 	   	  VCCIO5	   	   	  K14	  H11	   	   	   
+ 	   	  VCCIO5	   	   	  M15	  J11	   	   	   
+ 	   	  VCCIO6	   	   	  G14	  E11	   	   	   
+ 	   	  VCCIO6	   	   	  J15	  G11	   	   	   
+ 	   	  VCCIO6	   	   	  H15	   	   	   	   
+ 	   	  VCCIO7	   	   	  F12	  C10	   	   	   
+ 	   	  VCCIO7	   	   	  F11	  C9	   	   	   
+ 	   	  VCCIO7	   	   	  F10	   	   	   	   
+ 	   	  VCCIO7	   	   	  E13	   	   	   	   
+ 	   	  VCCIO8	   	   	  F8	  C7	   	   	   
+ 	   	  VCCIO8	   	   	  E9	   	   	   	   
+ 	   	  VCCIO8	   	   	  E7	   	   	   	   
+ 	   	  VCCIO9	   	   	  F4	  C3	   	   	   
+ 	   	  NC	   	   	  U3	  N2	   	   	   
+ 	   	  NC	   	   	  V3	  M3	   	   	   
+ 	   	  VCCA	   	   	  G5	  D4	   	   	   
+ 	   	  VCCA	   	   	  L6	  K4	   	   	   
+ 	   	  VCCA	   	   	  L13	  H9	   	   	   
+ 	   	  VCCA	   	   	  G13	  D9	   	   	   
+ 	   	  VCCL_GXB	   	   	  R4	  N1	   	   	   
+ 	   	  VCCL_GXB	   	   	  H3	  F3	   	   	   
+ 	   	  VCCL_GXB	   	   	  M3	  H3	   	   	   
+ 	   	  VCCL_GXB	   	   	  K3	   	   	   	   
+ 	   	  VCCL_GXB	   	   	  F3	   	   	   	   
+ 	   	  VCCH_GXB	   	   	  L3	  G3	   	   	   
+ 	   	  VCCH_GXB	   	   	  G3	   	   	   	   
+ 	   	  RREF0	   	   	  V1	  L1	   	   	   
+ 	   	  VCC_CLKIN3A	   	   	  N9	  K7	   	   	   
+ 	   	  VCCD_PLL	   	   	  F6	  D3	   	   	   
+ 	   	  VCCD_PLL	   	   	  M5	  J4	   	   	   
+ 	   	  VCCD_PLL	   	   	  M14	  J10	   	   	   
+ 	   	  VCCD_PLL	   	   	  F14	   	   	   	   
+ 	   	  VCC_CLKIN8A	   	   	  F9	  D7	   	   	   
+ 	   	  VCCA_GXB	   	   	  T4	  M2	   	   	   
+ 	   	  VCCA_GXB	   	   	  N3	  J3	   	   	   
+ 	   	  VCCA_GXB	   	   	  J3	   	   	   	   
+									
+Note:									
+(1) For DQS pins that do not have the associated DQ pins, the particular DQS is not supported.									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									

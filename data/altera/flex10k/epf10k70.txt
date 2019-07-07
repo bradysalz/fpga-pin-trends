@@ -1,0 +1,39 @@
+Pin Name	240-Pin PQFP/RQFP	503-Pin PGA																						
+MSEL0	124	AT40																						
+MSEL1	123	AV40																						
+nSTATUS	60	AY4																						
+nCONFIG	121	AY40																						
+DCLK	179	H40																						
+CONF_DONE	2	F4																						
+INIT_DONE	26	V6																						
+nCE	178	K40																						
+nCEO	3	H4																						
+nWS	238	A3																						
+nRS	236	C5																						
+nCS	240	C1																						
+CS	239	C3																						
+RDYnBSY	23	T6																						
+CLKUSR	11	H6																						
+DATA7	190	E29																						
+DATA6	188	D30																						
+DATA5	186	C31																						
+DATA4	185	B32																						
+DATA3	183	D32																						
+DATA2	182	B34																						
+DATA1	181	E33																						
+DATA0	180	F40																						
+TDI	177	M40																						
+TDO	4	K4																						
+TCK	1	D4																						
+TMS	58	AT4																						
+TRST	59	AV4																						
+Dedicated Inputs	90, 92, 210, 212	D20, D24, AY24, AY20																						
+Dedicated Clock Pins	91, 211	D22, AY22																						
+DEV_CLRn	209	F22																						
+DEV_OE	213	G21																						
+VCCINT	5, 16, 27, 37, 47, 57, 77, 89, 96, 112, 122, 130, 140, 150, 160, 170, 189, 205, 224	C11, E39, G27, N5, N41, W39, AC3, AG7, AR3, AR41, AU37, AW5, AW25, AW41, BA17, BA19																						
+VCCIO		C9, C15, C25, C33, C37, E19, E41, G7, L3, R41, U3, U37, W5, AC41, AE5, AJ41, AL39, AU3, AU17, AW3, AW19, BA9, BA27, BA29, BA37																						
+GNDINT	10, 22, 32, 42, 52, 69, 85, 93, 104, 125, 135, 145, 155, 165, 176, 197, 216, 232	C17, E3, E5, E25, G37, J3, J41, U7, AA3, AE39, AL5, AL41, AU27, AW39, BA7, BA13, BA25																						
+GNDIO	-	C21, C23, C39, C41, E13, E31, G3, G17, N3, N39, R3, W41, W3, AA41, AG37, AJ3, AN3, AN41, AU7, AU41, AW13, AW31, BA11, BA21, BA23																						
+No Connect (N.C.)	-	A19, A21, A23, A31, A33, A35, A39, A41, B16, B18, B22, B24, B30, B40, C29, C35, D18, D26, D28, D38, E27, E37, F18, F2, F26, F30, F32, G23, G25, G29, G31, G33, G35, K6, K42, L39, L43, M2, N7, P38, P4, P42, R37, T40, V42, AC5, AD2, AE3 																						
+Total User I/O Pins	189	358																						

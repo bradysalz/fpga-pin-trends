@@ -1,0 +1,490 @@
+Table 1 shows all pins for the EP1M120 484-pin FineLine BGA package.				
+				
+Table 1. EP1M120 Device Pin-Outs				
+I/O and VREF Bank	Maximum GTL+ Current Subgroup (1)	Pin Name/Function	Dual Purpose Function (2)	484-Pin      FineLine BGA
+1		I/O	HSDI_RX1p	A16
+1		I/O	HSDI_RX2p	A15
+1		I/O	HSDI_RX3p	A14
+1		I/O	HSDI_RX4p	A13
+1		HSDI_CLK1p	-	B12
+1		I/O	VREF1 (3)	A17
+1		I/O	HSDI_RX1n	B16
+1		I/O	HSDI_RX2n	B15
+1		I/O	HSDI_RX3n	B14
+1		I/O	HSDI_RX4n	B13
+1		HSDI_CLK1n	-	A12
+2 (4)		I/O	HSDI_TX1p	AB16
+2 (4)		I/O	HSDI_TX2p	AB15
+2 (4)		I/O	HSDI_TX3p	AB14
+2 (4)		I/O	HSDI_TX4p	AB13
+2 (4)		HSDI_TXCLKOUT1p	-	AB12
+2 (4)		I/O	VREF2 (3)	AB17
+2 (4)		I/O	HSDI_TX1n	AA16
+2 (4)		I/O	HSDI_TX2n	AA15
+2 (4)		I/O	HSDI_TX3n	AA14
+2 (4)		I/O	HSDI_TX4n	AA13
+2 (4)		HSDI_TXCLKOUT1n	-	AA12
+3		HSDI_CLK2p	-	A11
+3		I/O	HSDI_RX5p	A10
+3		I/O	HSDI_RX6p	A9
+3		I/O	HSDI_RX7p	A8
+3		I/O	HSDI_RX8p	A7
+3		HSDI_CLK2n	-	B11
+3		I/O	VREF3 (3)	C10
+3		I/O	HSDI_RX5n	B10
+3		I/O	HSDI_RX6n	B9
+3		I/O	HSDI_RX7n	B8
+3		I/O	HSDI_RX8n	B7
+4 (4)		I/O	HSDI_TX5p	AB10
+4 (4)		I/O	HSDI_TX6p	AB9
+4 (4)		I/O	HSDI_TX7p	AB8
+4 (4)		I/O	HSDI_TX8p	AB7
+4 (4)		I/O	VREF4 (3)	AB11
+4 (4)		I/O	HSDI_TX5n	AA10
+4 (4)		I/O	HSDI_TX6n	AA9
+4 (4)		I/O	HSDI_TX7n	AA8
+4 (4)		I/O	HSDI_TX8n	AA7
+5	A	I/O	-	B19
+5	A	I/O	-	C19
+5	A	I/O	-	D18
+5	A	I/O	-	C17
+5	A	I/O	-	D19
+5	A	I/O	-	D17
+5	A	I/O	-	B18
+5	A	I/O	-	C18
+5	A	I/O	-	E14
+5	A	I/O	-	E18
+5	A	I/O	-	F15
+5	A	I/O	VREF5 (3)	F18
+5	A	I/O	-	B17
+5	A	I/O	-	C16
+5	B	I/O	-	D16
+5	B	I/O	-	E13
+5	B	I/O	-	F13
+5	B	I/O	-	E15
+5	C	I/O	FAST_ROW2 (5)	H12
+6	A	I/O	FAST_ROW1 (5)	H11
+6	B	I/O	-	C3
+6	B	I/O	-	A5
+6	B	I/O	-	B4
+6	B	I/O	-	C4
+6	B	I/O	-	B3
+6	C	I/O	-	D6
+6	C	I/O	-	E8
+6	C	I/O	-	B5
+6	C	I/O	-	D7
+6	C	I/O	-	C5
+6	C	I/O	-	E10
+6	C	I/O	-	D5
+6	C	I/O	-	A6
+6	C	I/O	-	A3
+6	C	I/O	-	A4
+6	C	I/O	VREF6 (3)	D4
+7	A	I/O	DATA1 (6)	J22
+7	A	I/O	DATA2 (6)	J21
+7	A	I/O	DATA3 (6)	J20
+7	A	I/O	INIT_DONE (7)	H19
+7	A	I/O	DATA4 (6)	K21
+7	A	I/O	nWS (6)	J19
+7	A	I/O	-	K22
+7	A	I/O	DATA5 (6)	K20
+7	A	I/O	nCS (6)	J18
+7	A	I/O	DATA7 (6)	L21
+7	A	I/O	nRS (6)	K19
+7	A	I/O	VREF7 (3)	L22
+7	A	I/O	DATA6 (6)	L20
+7	A	I/O	CLKUSR (6)	L19
+7	A	I/O	CS (6)	L18
+7	B	I/O	DEV_CLRn (7)	H18
+7	B	I/O	DEV_OE (7)	H17
+7	B	I/O	-	F20
+7	B	I/O	-	F21
+7	B	I/O	-	H21
+7	B	I/O	-	F22
+7	B	I/O	-	H15
+7	B	I/O	RDYnBSY (6)	K18
+7	B	I/O	-	G20
+7	B	I/O	-	G21
+7	B	I/O	-	M21
+7	B	I/O	-	M20
+7	C	I/O	-	E19
+7	C	I/O	-	K15
+7	C	I/O	FAST6 (8)	L14
+7	C	I/O	-	F19
+7	C	I/O	-	H13
+7	C	I/O	-	J17
+7	C	I/O	FAST4 (8)	K13
+7	C	I/O	-	L17
+7	C	I/O	-	L15
+7	C	I/O	FAST_ROW4 (5)	K12
+7	C	I/O	-	M19
+7	C	I/O	-	L16
+7	C	I/O	FAST5 (8)	K14
+8	A	I/O	FAST3 (8)	L9
+8	A	I/O	-	H1
+8	A	I/O	-	J2
+8	A	I/O	-	K3
+8	A	I/O	FAST2 (8)	K9
+8	A	I/O	-	G2
+8	A	I/O	FAST1 (8)	K10
+8	A	I/O	-	J1
+8	A	I/O	-	F2
+8	A	I/O	-	L2
+8	A	I/O	-	H2
+8	A	I/O	FAST_ROW3 (5)	K11
+8	A	I/O	-	K1
+8	A	I/O	-	K2
+8	A	I/O	-	L3
+8	B	I/O	-	G3
+8	B	I/O	-	H4
+8	B	I/O	-	E5
+8	B	I/O	-	K4
+8	B	I/O	-	G11
+8	B	I/O	-	H3
+8	B	I/O	-	J5
+8	B	I/O	-	J3
+8	B	I/O	-	L5
+8	B	I/O	-	L4
+8	B	I/O	-	J4
+8	B	I/O	-	K5
+8	C	I/O	-	E9
+8	C	I/O	LOCK1 (9)	F3
+8	C	I/O	-	J8
+8	C	I/O	-	F9
+8	C	I/O	-	F5
+8	C	I/O	-	H7
+8	C	I/O	-	J6
+8	C	I/O	-	J10
+8	C	I/O	-	K8
+8	C	I/O	-	H5
+8	C	I/O	-	H6
+8	C	I/O	VREF8 (3)	L1
+9	A	I/O	-	N22
+9	A	I/O	-	N20
+9	A	I/O	-	R20
+9	A	I/O	-	N18
+9	A	I/O	-	N21
+9	A	I/O	-	N19
+9	A	I/O	-	M22
+9	A	I/O	-	R21
+9	A	I/O	-	P19
+9	A	I/O	-	U22
+9	A	I/O	-	P20
+9	A	I/O	VREF9 (3)	P21
+9	A	I/O	-	T22
+9	A	I/O	-	T21
+9	A	I/O	-	T20
+9	B	I/O	-	N17
+9	B	I/O	-	M16
+9	B	I/O	-	T12
+9	B	I/O	-	P17
+9	B	I/O	-	M15
+9	B	I/O	-	P18
+9	B	I/O	-	N15
+9	B	I/O	-	R19
+9	B	I/O	-	N16
+9	B	I/O	-	T19
+9	B	I/O	-	R14
+9	B	I/O	-	R15
+9	C	I/O	-	R12
+9	C	I/O	-	P12
+9	C	I/O	-	N13
+9	C	I/O	-	T13
+9	C	I/O	-	M14
+9	C	I/O	-	R13
+9	C	I/O	FAST_ROW6 (5)	N12
+9	C	I/O	-	N14
+9	C	I/O	-	P13
+10	A	I/O	-	U1
+10	A	I/O	-	M1
+10	A	I/O	-	N2
+10	A	I/O	-	U2
+10	A	I/O	-	T1
+10	A	I/O	-	M2
+10	A	I/O	-	N1
+10	A	I/O	-	R2
+10	A	I/O	FAST_ROW5 (5)	N11
+10	A	I/O	-	T2
+10	A	I/O	-	T3
+10	B	I/O	-	P3
+10	B	I/O	-	R4
+10	B	I/O	-	M4
+10	B	I/O	-	M3
+10	B	I/O	-	N4
+10	B	I/O	-	N3
+10	B	I/O	-	P5
+10	B	I/O	-	R3
+10	B	I/O	-	R5
+10	B	I/O	-	T4
+10	B	I/O	-	P4
+10	B	I/O	-	N9
+10	C	I/O	-	L6
+10	C	I/O	-	L7
+10	C	I/O	-	L8
+10	C	I/O	-	M5
+10	C	I/O	-	M8
+10	C	I/O	-	P6
+10	C	I/O	-	M9
+10	C	I/O	LOCK2 (9)	U3
+10	C	I/O	-	P10
+10	C	I/O	-	P11
+10	C	I/O	-	N8
+10	C	I/O	-	N10
+10	C	I/O	VREF10 (3)	P2
+11	A	I/O	VREF11 (3)	U20
+11	A	I/O	-	AA20
+11	A	I/O	-	U14
+11	A	I/O	-	Y18
+11	A	I/O	-	Y20
+11	A	I/O	-	AB19
+11	A	I/O	-	V21
+11	A	I/O	-	W20
+11	A	I/O	-	AA19
+11	A	I/O	-	V20
+11	A	I/O	-	U19
+11	A	I/O	-	Y19
+11	A	I/O	-	U21
+11	A	I/O	-	W21
+11	A	I/O	-	Y21
+11	B	I/O	-	U15
+11	B	I/O	-	W16
+11	B	I/O	-	AA11
+11	B	I/O	-	AB18
+11	B	I/O	-	T15
+11	B	I/O	-	W18
+11	B	I/O	-	AA17
+11	B	I/O	-	Y17
+11	B	I/O	-	V19
+11	B	I/O	-	W19
+11	B	I/O	-	AA18
+11	B	I/O	-	W17
+11	C	I/O	-	Y11
+11	C	I/O	-	W11
+11	C	I/O	-	Y12
+11	C	I/O	-	Y14
+11	C	I/O	-	W12
+11	C	I/O	-	W14
+11	C	I/O	-	V12
+11	C	I/O	-	Y15
+11	C	I/O	-	Y13
+11	C	I/O	FAST_ROW8 (5)	U12
+11	C	I/O	-	Y16
+11	C	I/O	-	W15
+11	C	I/O	-	W13
+12	A	I/O	-	AB3
+12	A	I/O	-	Y3
+12	A	I/O	-	Y4
+12	A	I/O	-	AA5
+12	A	I/O	-	AA3
+12	A	I/O	-	Y5
+12	A	I/O	FAST_ROW7 (5)	U11
+12	A	I/O	-	AA4
+12	A	I/O	-	W5
+12	A	I/O	-	W4
+12	A	I/O	-	AB6
+12	A	I/O	-	AB4
+12	A	I/O	-	AB5
+12	A	I/O	-	AA6
+12	A	I/O	-	Y7
+12	B	I/O	-	V5
+12	B	I/O	-	R6
+12	B	I/O	-	R7
+12	B	I/O	-	U8
+12	B	I/O	-	Y8
+12	B	I/O	-	Y6
+12	B	I/O	-	V8
+12	B	I/O	-	W6
+12	B	I/O	-	Y9
+12	B	I/O	-	W7
+12	B	I/O	-	W9
+12	B	I/O	-	V9
+12	C	I/O	-	R8
+12	C	I/O	VREF12 (3)	U9
+12	C	I/O	-	W8
+12	C	I/O	-	R9
+12	C	I/O	-	Y10
+12	C	I/O	-	U10
+12	C	I/O	-	W10
+12	C	I/O	-	R10
+12	C	I/O	-	R11
+13		"DATA0 (10), (11)"	-	D20
+13		DCLK (10)	-	E21
+13		CONF_DONE (10)	-	A22
+13		nSTATUS (10)	-	A21
+13		MSEL0 (10)	-	C21
+13		MSEL1 (10)	-	E22
+13		"PLLRDY (10), (12)"	-	E20
+13		nCONFIG (10)	-	C20
+13		nCE (10)	-	B21
+13		"VCCSEL (10), (13)"	-	C22
+13		"nIO_PULLUP (10), (14)"	-	D21
+13		nCEO (10)	-	D22
+13		"CLKLK_ENA (10), (15)"	-	B20
+14		TDO (10)	-	Y22
+14		TDI (10)	-	AA22
+14		TMS (10)	-	AB22
+14		TCK (10)	-	AB21
+14		TRST (10)	-	AB20
+15		"CLKLK_OUT1p (10), (16)"	-	B1
+15		CLKLK_OUT1n	-	C1
+16		CLKLK_OUT2n	-	Y1
+16		"CLKLK_OUT2p (10), (16)"	-	AA1
+10		CLKLK_FB1n	CLKLK_FB1VREF	E1
+10		"CLKLK_FB1p (10), (17)"	-	D1
+10		CLK1p	-	L10
+10		CLK2p	-	L11
+10		CLK1n	CLK1VREF	M10
+10		CLK2n	CLK2VREF	M11
+10		CLKLK_FB2n	CLKLK_FB2VREF	V1
+10		CLKLK_FB2p (17)	-	W1
+9		CLK3p	-	L12
+9		CLK4p	-	L13
+9		CLK3n	CLK3VREF	M12
+9		CLK4n	CLK4VREF	M13
+-		RES0 (18)	-	D11
+-		VCCINT	-	G19
+-		VCCINT	-	M18
+-		VCCINT	-	T18
+-		VCCINT	-	V18
+-		VCCINT	-	G17
+-		VCCINT	-	K17
+-		VCCINT	-	G16
+-		VCCINT	-	T16
+-		VCCINT	-	V16
+-		VCCINT	-	J16
+-		VCCINT	-	T7
+-		VCCINT	-	V6
+-		VCCINT	-	J7
+-		VCCINT	-	K7
+-		VCCINT	-	M7
+-		VCCINT	-	V7
+-		VCCINT	-	G9
+-		VCCINT	-	T6
+-		VCCINT	-	F11
+-		VCCIO1 	-	F16
+-		VCCIO3 	-	F7
+-		VCCIO4 	-	G7
+-		VCCIO4 	-	D12
+-		VCCIO4 	-	G18
+-		VCCIO5	-	F17
+-		VCCIO5 	-	A19
+-		VCCIO6 	-	F6
+-		VCCIO6 	-	A2
+-		VCCIO7 	-	G22
+-		VCCIO7 	-	H16
+-		VCCIO7 	-	H20
+-		VCCIO7 	-	H22
+-		VCCIO8 	-	G6
+-		VCCIO8 	-	G5
+-		VCCIO8 	-	G4
+-		VCCIO8 	-	F1
+-		VCCIO9 	-	P22
+-		VCCIO9 	-	R16
+-		VCCIO9 	-	R17
+-		VCCIO9 	-	R18
+-		VCCIO10 	-	N5
+-		VCCIO10 	-	N6
+-		VCCIO10 	-	N7
+-		VCCIO10 	-	P1
+-		VCCIO11 	-	V22
+-		VCCIO11 	-	U16
+-		VCCIO11 	-	U17
+-		VCCIO11 	-	U18
+-		VCCIO12 	-	U5
+-		VCCIO12 	-	U6
+-		VCCIO12 	-	U7
+-		VCCIO12 	-	AB1
+-		VCCIO13	-	A20
+-		VCCIO14 	-	AA21
+-		VCCD_RX	-	E16
+-		VCCD_RX	-	E7
+-		VCCD_RX	-	G10
+-		VCCD_RX	-	G13
+-		VCCD_RX	-	J11
+-		VCCD_TX	-	E17
+-		VCCD_TX	-	E6
+-		VCCA_HSDI1	-	F10
+-		VCCD_HSDI1	-	E11
+-		VCCA_HSDI2	-	E12
+-		VCCD_HSDI2	-	F12
+-		VCCA_CKLK1	-	B2
+-		VCCA_CKLK1	-	D2
+-		VCCD_CKLK1	-	E2
+-		VCCA_CKLK2	-	AA2
+-		VCCA_CKLK2	-	W2
+-		VCCD_CKLK2	-	V2
+		VCC_CKOUT1	-	C2
+		VCC_CKOUT2	-	Y2
+-		GND	-	H14
+-		GND	-	R22
+-		GND	-	W22
+-		GND	-	A18
+-		GND	-	G12
+-		GND	-	M17
+-		GND	-	T17
+-		GND	-	V17
+-		GND	-	G15
+-		GND	-	J13
+-		GND	-	K16
+-		GND	-	P16
+-		GND	-	V15
+-		GND	-	C15
+-		GND	-	D15
+-		GND	-	J15
+-		GND	-	P15
+-		GND	-	C14
+-		GND	-	D14
+-		GND	-	F14
+-		GND	-	G14
+-		GND	-	J14
+-		GND	-	P14
+-		GND	-	T14
+-		GND	-	V14
+-		GND	-	C13
+-		GND	-	U13
+-		GND	-	V13
+-		GND	-	C12
+-		GND	-	J12
+-		GND	-	H10
+-		GND	-	T10
+-		GND	-	V10
+-		GND	-	C9
+-		GND	-	D9
+-		GND	-	H9
+-		GND	-	J9
+-		GND	-	P9
+-		GND	-	T9
+-		GND	-	C8
+-		GND	-	D8
+-		GND	-	F8
+-		GND	-	H8
+-		GND	-	P8
+-		GND	-	T8
+-		GND	-	C7
+-		GND	-	P7
+-		GND	-	T11
+-		GND	-	B6
+-		GND	-	C6
+-		GND	-	K6
+-		GND	-	M6
+-		GND	-	V11
+-		GND	-	G8
+-		GND	-	T5
+-		GND	-	AB2
+-		GND	-	A1
+-		GND	-	G1
+-		GND	-	R1
+		GND		U4
+		GND		V4
+		GND		V3
+		GND		D3
+		GND		E4
+		GND		E3
+		GND		F4
+		GND		W3
+-		GND	-	D13
+-		GND	-	D10
+-		GND	-	C11
+-		GND	-	B22
+"Total User 
+I/O Pins (19)"				303
