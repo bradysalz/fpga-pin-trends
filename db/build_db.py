@@ -23,13 +23,18 @@ def file_to_pins(filepath: Path) -> List[pin.Pin]:
     config_file = Path(filepath).parent / 'overview.toml'
 
     if not config_file.is_file():
-        raise FileNotFoundError(
-            f"No 'overview.toml' found for {config_file.parent}")
+        print(f"No 'overview.toml' found for {config_file.parent}")
+        return []
+        # raise FileNotFoundError
 
     with open(config_file) as f:
         config = toml.load(f)
 
-    parse_func = PARSE_TABLE[config['parser']]
+    try:
+        parse_func = PARSE_TABLE[config['parser']]
+    except KeyError:
+        print(f"'{config['parser']}' not found, skipping.")
+
     pins = parse_func(filepath, config)
     return pins
 
@@ -67,9 +72,9 @@ def add_all_files(root_dir: str = 'data/') -> List[Path]:
 
 if __name__ == '__main__':
     if os.path.exists('pin_out.db'):
-        os.remove('pin_out.db')
-        # raise FileExistsError(
-        # "'pin_out.db' already exists, please delete and retry")
+        # os.remove('pin_out.db')
+        raise FileExistsError(
+            "'pin_out.db' already exists, please delete and retry")
 
     print("Creating database...")
     manager = database.DbManager()

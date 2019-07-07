@@ -1,6 +1,6 @@
 # FPGA Pin Trends
 
-I was doing some hardware designs with FPGAs the other day at work, and on the face of it, it's pretty ridiculous how many pins are just power and ground. I get why - signal integrity, power integrity, all the good stuff, but when did this start becoming a thing? Someone at work said the general rule is four IO pins to one GND pin, but is that really teh case? This repo is a side project of mine to make some neat data visualizations to find out what these trend line really are.
+I was doing some hardware designs with FPGAs the other day at work, and on the face of it, it's pretty ridiculous how many pins are just power and ground. I get why - signal integrity, power integrity, all the good stuff, but when did this start becoming a thing? Someone at work said the general rule is four IO pins to one GND pin, but is that really the case? This repo is a side project of mine to make some neat data visualizations to find out what these trend line really are.
 
 This repo is probably going to be 90% code dedicated to data cleanup, and 10% ~~machine learning~~ plotting.
 
