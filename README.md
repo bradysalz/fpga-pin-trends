@@ -4,7 +4,7 @@ I was doing some hardware designs with FPGAs the other day at work, and on the f
 
 This repo is probably going to be 90% code dedicated to data cleanup, and 10% ~~machine learning~~ plotting.
 
-![VCC Pins and GND Pins](/img/vcc_vs_gnd.png)
+![VCC Pins and GND Pins](https://github.com/bradysalz/fpga-pin-trends/blob/master/img/vcc_vs_gnd.PNG)
 
 ## Getting Started
 
