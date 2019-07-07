@@ -3,4 +3,4 @@ node = 20
 year = 2018
 parser = "parse_kintex_ultrascale_plus"
 manufacturer = "Xilinx"
-family = "Xilinx Kintex Ultrascale Qualified"
+family = "Kintex Ultrascale Qualified"
